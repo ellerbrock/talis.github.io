@@ -1,4 +1,4 @@
-var baseBBSUrl = 'http://http://95.138.143.82:3002/builds/';
+var baseBBSUrl = 'http://95.138.143.82:3002/builds/';
 jQuery(document).ready(function($) {
     $('.build-number').each(function(index){
         var project = $(this).attr("data-bamboo-project");
