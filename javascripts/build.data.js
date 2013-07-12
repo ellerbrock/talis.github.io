@@ -7,7 +7,6 @@ jQuery(document).ready(function($) {
         $.getJSON(baseBBSUrl+project+'/plans/'+plan+'/status.json',function(data) {
             if (data.number)
             {
-                console.log("Build number: "+data.number);
                 _elem.html("Build "+data.number);
             }
         })
