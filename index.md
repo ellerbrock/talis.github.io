@@ -2,7 +2,8 @@
 layout: site
 body_class: home
 ---
-<h2>About</h2>
+
+## About the handbook
 
 This handbook contains everything you need to know about being an engineer at Talis.
 
