@@ -19,8 +19,15 @@ Later, when you are closer to merge, and need a pedant, re-title your pull with 
 You'll find that smaller changes (one liners or very small features) will skip the 30% stage and go right to demanding
 90% feedback.
 
+### What is a 0% PR?
+
+These are pull requests raised by developers wishing to track their own changes, and organising their thoughts for
+later review.
+
+Please do not comment on these PRs unless the owner asks you to.
+
 ### When can I hit merge?
 
-There are no hard and fast rules about when code can be merged, except that you have to have had a round of feedback
+There are no hard and fast rules about when a PR can be merged, except that you have to have had a round of feedback
 from a peer at 90% level, and responded to all raised issues either by committing further work or resolving any
 discussion in the PR itself.
