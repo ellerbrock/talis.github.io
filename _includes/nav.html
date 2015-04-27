@@ -1,0 +1,15 @@
+<p>{% if page.body_class == 'home' %}<span class="caret"></span>{% endif %}
+    <a href="{{ site.url }}/">Home</a>
+</p>
+<p>{% if page.body_class == 'source-control' %}<span class="caret"></span>{% endif %}
+    <a href="{{ site.url }}/source-control.html">Source Control</a>
+</p>
+<p>{% if page.body_class == 'code-reviews' %}<span class="caret"></span>{% endif %}
+    <a href="{{ site.url }}/code-reviews.html">Code Reviews</a>
+</p>
+<p>{% if page.body_class == 'build-status' %}<span class="caret"></span>{% endif %}
+    <a href="{{ site.url }}/build-status.html">Build Status</a>
+</p>
+<p>{% if page.body_class == 'performance' %}<span class="caret"></span>{% endif %}
+    <a href="{{ site.url }}/performance.html">Performance</a>
+</p>
