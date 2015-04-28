@@ -13,6 +13,21 @@ https://talis.github.io.
 
 If you wish to make changes, create a branch and submit a pull request.
 
+## Build & run locally
+
+```
+git clone https://github.com/talis/talis.github.io.git
+cd talis.github.io
+bundle install
+jekyll serve
+```
+
+Now go to http://127.0.0.1:4000
+
+## Deploy
+
+To deploy to http://talis.github.io, merge to `master`. Changes will be applied after a short wait.
+
 ## Contributing to the handbook
 
 *Anyone* can contribute. This handbook is written by engineers, for engineers. However, when contributing or reviewing
@@ -32,10 +47,4 @@ The [rules for merging to master](https://talis.github.io/code-reviews.html) are
 [use footnotes](http://kramdown.gettalong.org/syntax.html#footnotes)
 * Keep markdown source strictly to 120 columns wide or less.
 
-## Previewing locally
 
-```
-jekyll serve
-```
-
-Now go to http://127.0.0.1:4000
