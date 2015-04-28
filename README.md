@@ -1,6 +1,10 @@
 # Engineering handbook
 
-The engineering handbook documents our outline approach to development. See https://talis.github.io for more.
+The engineering handbook documents our official approach to engineering. See https://talis.github.io for the latest
+peer-reviewed version.
+
+The site is designed to read like a book which is why it emphasises white space and doesn't look like a web app. Any
+styling changes that promote this ethos are welcomed.
 
 ## How it works
 
@@ -15,10 +19,18 @@ If you wish to make changes, create a branch and submit a pull request.
 the contributions of others, consider:
 
 * Are you adding global knowledge, or is your topic specific to one or a small subset of projects?
-* Are you adding accepted wisdom and practice, or just your own spin on things? Tip: A pull request widely shared usually resolves this ;-)
+* Are you adding accepted wisdom and practice, or just your own spin on things? Tip: A pull request widely shared
+usually resolves this ;-)
 * Is your contribution both concise and precise?
 
 The [rules for merging to master](https://talis.github.io/code-reviews.html) are the same as any other Talis repo.
+
+### Style guide
+
+* Read back what you have written, and try writing it again using half the words
+* The site is designed to read like a book. Inline links should only point elsewhere in the guide. For external links
+[use footnotes](http://kramdown.gettalong.org/syntax.html#footnotes)
+* Keep markdown source strictly to 120 columns wide or less.
 
 ## Previewing locally
 
