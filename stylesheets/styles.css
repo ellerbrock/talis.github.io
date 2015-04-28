@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,300,700);
 
 td.icon {
 	width: 20%;
@@ -9,13 +9,12 @@ td.build-number {
 
 body {
   padding:50px;
-  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font:14px/1.5 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
   font-weight:300;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:#222;
   margin:0 0 20px;
 }
 
@@ -28,15 +27,16 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size:28px;
+  color:#222;
+  font-size:1.8em;
 }
 
 h2 {
-  color:#393939;
+  font-size:1.5em;
 }
 
-h3, h4, h5, h6 {
-  color:#494949;
+h2, h3, h4, h5, h6 {
+  color:#555;
 }
 
 a {
@@ -172,8 +172,8 @@ section, footer {
 }
 
 section {
-    padding-top: 170px;
-    padding-bottom:85px;
+    padding-top: 12em;
+    padding-bottom:6em;
 }
 
 small {
