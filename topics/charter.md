@@ -1,9 +1,8 @@
 ---
 layout: site
+title: Our Charter
 body_class: charter
 ---
-
-## Our Charter
 
 * Fix the root cause rather than further contributing to
 the rot [^1]

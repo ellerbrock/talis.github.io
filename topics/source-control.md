@@ -1,9 +1,9 @@
 ---
 layout: site
+title: Source Control
 body_class: source-control
 ---
 
-## Source control
 
 All source is stored within the [Talis GitHub](https://github.com/talis).
 

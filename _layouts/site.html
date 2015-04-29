@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Code Healthcheck by Talis</title>
+    <title>{% if page.title != nil %}{{ page.title }} - {% endif %}Engineering Handbook by Talis</title>
 
     <link rel="stylesheet" href="/stylesheets/styles.css">
     <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
@@ -15,6 +15,7 @@
 <body class="wrapper {% if page.body_class %}{{ page.body_class }}{% endif %}">
     {% include header.html %}
     <section>
+        {% if page.title != nil %}<h2>{{ page.title }}</h2>{% endif %}
         {{ content }}
     </section>
     <footer>

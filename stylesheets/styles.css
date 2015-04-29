@@ -10,12 +10,21 @@ td.build-number {
 body {
   padding:50px;
   font:14px/1.5 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#777;
+  color:#5E5E5E;
   font-weight:300;
+  line-height: 180%;
+}
+
+.brand {
+    background-image: url('/images/logo.png');
+    height: 12em;
+    background-repeat: no-repeat;
+    background-position: 0% 45%;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin:0 0 20px;
+    color: #5E5E5E;
 }
 
 p, ul, ol, table, pre, dl {
@@ -27,7 +36,6 @@ h1, h2, h3 {
 }
 
 h1 {
-  color:#222;
   font-size:1.8em;
 }
 
@@ -35,19 +43,15 @@ h2 {
   font-size:1.5em;
 }
 
-h2, h3, h4, h5, h6 {
-  color:#555;
-}
-
 a {
-  color:#39c;
+  color:#017D87;
   font-weight:400;
   text-decoration:none;
 }
 
 a small {
   font-size:11px;
-  color:#777;
+  color:#017D87;
   margin-top:-0.6em;
   display:block;
 }
@@ -105,65 +109,20 @@ img {
 header {
   width:300px;
   float:left;
-  position:fixed;
 }
 
 header ul {
   list-style:none;
-  height:40px;
-  
   padding:0;
-  
-  background: #eee;
-  background: -moz-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
-  background: -webkit-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  background: -o-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  background: -ms-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  background: linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  
-  border-radius:5px;
-  border:1px solid #d2d2d2;
-  box-shadow:inset #fff 0 1px 0, inset rgba(0,0,0,0.03) 0 -1px 0;
-  width:270px;
 }
-
-header li {
-  width:89px;
-  float:left;
-  border-right:1px solid #d2d2d2;
-  height:40px;
+header ul li.active a {
+    color: #5E5E5E;
+    font-weight: 600;
+    /*padding-bottom: 0.6em;*/
 }
-
-header ul a {
-  line-height:1;
-  font-size:11px;
-  color:#999;
-  display:block;
-  text-align:center;
-  padding-top:6px;
-  height:40px;
-}
-
 strong {
   color:#222;
   font-weight:700;
-}
-
-header ul li + li {
-  width:88px;
-  border-left:1px solid #fff;
-}
-
-header ul li + li + li {
-  border-right:none;
-  width:89px;
-}
-
-header ul a strong {
-  font-size:14px;
-  display:block;
-  color:#222;
 }
 
 section, footer {
@@ -280,4 +239,14 @@ hr {
 abbr {
     border-bottom: 1px dotted #e5e5e5;
     cursor: help;
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    /* Retina-specific stuff here */
+    .brand {
+        background-image: url('/images/logo@2x.png');
+        background-size: 127px 53px;
+    }
 }

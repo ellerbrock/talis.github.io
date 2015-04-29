@@ -1,54 +1,64 @@
-<p>{% if page.body_class == 'charter' %}<span class="caret"></span>{% endif %}
-    <a href="{{ site.url }}/topics/charter.html">Our charter</a>
-</p>
-<h3>Code</h3>
-<p>{% if page.body_class == 'code-style' %}<span class="caret"></span>{% endif %}
-    <a href="{{ site.url }}/topics/code-style.html">Style</a>
-</p>
-<p>{% if page.body_class == 'code-reviews' %}<span class="caret"></span>{% endif %}
-    <a href="{{ site.url }}/topics/code-reviews.html">Reviews</a>
-</p>
-<p>{% if page.body_class == 'testing' %}<span class="caret"></span>{% endif %}
-    <a href="{{ site.url }}/topics/testing.html">Testing</a>
-</p>
-<p>{% if page.body_class == 'code-standards' %}<span class="caret"></span>{% endif %}
-    <a href="{{ site.url }}/topics/code-standards.html">Standards</a>
-</p>
-<h3>Starting a new project</h3>
-<p>{% if page.body_class == 'names' %}<span class="caret"></span>{% endif %}
-    <a href="{{ site.url }}/topics/names.html">Naming conventions</a>
-</p>
-<p>{% if page.body_class == 'source-control' %}<span class="caret"></span>{% endif %}
-    <a href="{{ site.url }}/topics/source-control.html">Source Control</a>
-</p>
-<p>{% if page.body_class == 'builds' %}<span class="caret"></span>{% endif %}
-    <a href="{{ site.url }}/topics/builds.html">Builds</a>
-</p>
-<p>{% if page.body_class == 'ci' %}<span class="caret"></span>{% endif %}
-    <a href="{{ site.url }}/topics/ci.html">Continuous integration</a>
-</p>
-<p>{% if page.body_class == 'documentation' %}<span class="caret"></span>{% endif %}
-    <a href="{{ site.url }}/topics/documentation.html">Documentation</a>
-</p>
-<p>{% if page.body_class == 'env' %}<span class="caret"></span>{% endif %}
-    <a href="{{ site.url }}/topics/env.html">Environments</a>
-</p>
-<p>{% if page.body_class == 'prod-check' %}<span class="caret"></span>{% endif %}
-    <a href="{{ site.url }}/topics/prod-check.html">Production checklist</a>
-</p>
-<h3>Architecture</h3>
-<p>{% if page.body_class == 'microservices' %}<span class="caret"></span>{% endif %}
-    <a href="{{ site.url }}/topics/microservices.html">Microservices</a>
-</p>
-<p>{% if page.body_class == 'apis' %}<span class="caret"></span>{% endif %}
-    <a href="{{ site.url }}/topics/apis.html">API Design</a>
-</p>
-<p>{% if page.body_class == 'persistence' %}<span class="caret"></span>{% endif %}
-    <a href="{{ site.url }}/topics/persistence.html">Persistence</a>
-</p>
-<h3>Operations</h3>
-<p>{% if page.body_class == 'incidents' %}<span class="caret"></span>{% endif %}
-    <a href="{{ site.url }}/topics/incidents.html">Live incidents</a>
-</p>
-
-
+<nav>
+    <ul>
+        <li{% if page.body_class == 'charter' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/charter.html">Our charter</a>
+        </li>
+    </ul>
+    <h3>Code</h3>
+    <ul>
+        <li{% if page.body_class == 'code-style' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/code-style.html">Style</a>
+        </li>
+        <li{% if page.body_class == 'code-reviews' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/code-reviews.html">Reviews</a>
+        </li>
+        <li{% if page.body_class == 'testing' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/testing.html">Testing</a>
+        </li>
+        <li{% if page.body_class == 'code-standards' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/code-standards.html">Standards</a>
+        </li>
+    </ul>
+    <h3>Starting a new project</h3>
+    <ul>
+        <li{% if page.body_class == 'names' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/names.html">Naming conventions</a>
+        </li>
+        <li{% if page.body_class == 'source-control' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/source-control.html">Source Control</a>
+        </li>
+        <li{% if page.body_class == 'builds' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/builds.html">Builds</a>
+        </li>
+        <li{% if page.body_class == 'ci' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/ci.html">Continuous integration</a>
+        </li>
+        <li{% if page.body_class == 'documentation' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/documentation.html">Documentation</a>
+        </li>
+        <li{% if page.body_class == 'env' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/env.html">Environments</a>
+        </li>
+        <li{% if page.body_class == 'prod-check' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/prod-check.html">Production checklist</a>
+        </li>
+    </ul>
+    <h3>Architecture</h3>
+    <ul>
+        <li{% if page.body_class == 'microservices' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/microservices.html">Microservices</a>
+        </li>
+        <li{% if page.body_class == 'apis' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/apis.html">API Design</a>
+        </li>
+        <li{% if page.body_class == 'persistence' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/persistence.html">Persistence</a>
+        </li>
+    </ul>
+    <h3>Operations</h3>
+    <ul>
+        <li{% if page.body_class == 'incidents' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/incidents.html">Live incidents</a>
+        </li>
+    </ul>
+</nav>

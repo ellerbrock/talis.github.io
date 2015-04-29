@@ -1,9 +1,9 @@
 ---
 layout: site
+title: Documentation
 body_class: documentation
 ---
 
-## Documentation
 
 Each project should have a README.md in the project's root folder. This should contain at a minimum:
 
