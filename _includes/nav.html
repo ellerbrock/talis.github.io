@@ -57,8 +57,30 @@
     </ul>
     <h3>Operations</h3>
     <ul>
+        <li{% if page.body_class == 'provisioning' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/provisioning.html">Provisioning</a>
+        </li>
+        <li{% if page.body_class == 'cfgmgmt' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/cfgmgmt.html">Configuration Management</a>
+        </li>
+        <li{% if page.body_class == 'deployments' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/deployments.html">Deployments</a>
+        </li>
+        <li{% if page.body_class == 'monitoring' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/monitoring.html">Monitoring</a>
+        </li>
+        <li{% if page.body_class == 'alerts' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/alerts.html">Alerts</a>
+        </li>
         <li{% if page.body_class == 'incidents' %} class="active"{% endif %}>
             <a href="{{ site.url }}/topics/incidents.html">Live incidents</a>
         </li>
     </ul>
+    <h3>Security</h3>
+        <li{% if page.body_class == 'protocols' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/protocols.html">Protocols</a>
+        <li{% if page.body_class == 'keys' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/keys.html">Keys</a>
+        </li>
+        </li>
 </nav>
