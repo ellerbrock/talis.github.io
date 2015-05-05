@@ -10,7 +10,7 @@ raising a pull request on the relevant github repository and asking your colleag
 
 ### 30% vs 90%
 
-Early feedback on an outline plan for your code is great. We follow the [30% feedback rule](http://lifehacker.com/the-30-percent-rule-and-the-art-of-early-feedback-1619474527)
+Early feedback on an outline plan for your code is great. We follow the 30% feedback rule[^1]
 which allows developers to get early feedback on designs before dotting the i's and crossing the t's. Simply mark your
 pull request with 30% in the title to get this kind of feedback.
 
@@ -31,3 +31,7 @@ Please do not comment on these PRs unless the owner asks you to.
 There are no hard and fast rules about when a PR can be merged, except that you have to have had a round of feedback
 from a peer at 90% level, and responded to all raised issues either by committing further work or resolving any
 discussion in the PR itself.
+
+
+
+[^1]: [The 30 percent rule and the art of early feedback](http://lifehacker.com/the-30-percent-rule-and-the-art-of-early-feedback-1619474527)
