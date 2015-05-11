@@ -4,8 +4,10 @@ title: Microapps
 body_class: microapps
 ---
 
+Article outline:
 
-### Backends for Frontends
+* What are microapps? Why use them?
+* Refactoring the monolith
+* Backends for Frontends - API Gateways
 
-When building
 
