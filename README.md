@@ -19,7 +19,8 @@ If you wish to make changes, create a branch and submit a pull request.
 sudo apt-get install ruby-dev nodejs
 git clone https://github.com/talis/talis.github.io.git
 cd talis.github.io
-bundle install
+gem install jekyll
+bundle install --path vendor/bundle
 jekyll serve
 ```
 

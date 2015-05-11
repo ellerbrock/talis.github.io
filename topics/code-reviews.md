@@ -6,7 +6,7 @@ body_class: code-reviews
 
 
 All code at Talis must go through peer review before it can be merged into `master`. This can be done by
-raising a pull request on the relevant github repository and asking your colleagues for input.
+raising a pull request on the relevant GitHub repository and asking your colleagues for input.
 
 ### 30% vs 90%
 
