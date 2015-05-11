@@ -5,15 +5,14 @@ body_class: charter
 ---
 
 * Promote shared, not individual code ownership [^1]
-* Fix the root cause rather than further contributing to
+* Fix root causes rather than further contributing to
 the rot [^2]
-* Improve documentation before moving on.
-* Features are not *done* util managing, deploying, monitoring and scaling are implemented.
-* Software engineering is complex, so define terms and be precise. Check everyone understands before moving on.
-* Don't add a new TODO without also referencing an open issue where others can discuss.
-* Don't repeat a task for a third time without automating, unless you can serve an Awesome Excuse.
-* Build according to the Twelve-Factor[^3] methodology.
-* Fight for the users.
+* Continuously improve documentation
+* Don't repeat tasks, automate
+* Managing, deploying, monitoring and scaling are not done later
+* Define terms clearly and be precise, both in code and conversation
+* Build according to the Twelve-Factor[^3] methodology
+* Fight for the users
 
 
 
@@ -22,4 +21,3 @@ the rot [^2]
 [^2]: [Broken windows theory](http://en.wikipedia.org/wiki/Broken_windows_theory)
 [^3]: [The Twelve-Factor App](http://12factor.net/)
 
-*[Awesome Excuse]: It better be really awesome.
