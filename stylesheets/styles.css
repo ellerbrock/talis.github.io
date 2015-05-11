@@ -23,11 +23,10 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin:0 0 20px;
     color: #5E5E5E;
 }
 
-p, ul, ol, table, pre, dl {
+h1, h2, h3, p, ul, ol, table, pre, dl {
   margin:0 0 20px;
 }
 
@@ -41,6 +40,10 @@ h1 {
 
 h2 {
   font-size:1.5em;
+}
+
+h4, h5, h6 {
+    margin:0;
 }
 
 a {
@@ -111,15 +114,29 @@ header {
   float:left;
 }
 
-header ul {
+nav ul {
   list-style:none;
   padding:0;
 }
-header ul li.active a {
+nav ul li.active a {
     color: #5E5E5E;
     font-weight: 600;
     /*padding-bottom: 0.6em;*/
 }
+
+footer nav ul li, footer nav ul, footer nav h4 {
+    display: inline;
+}
+footer nav ul li:after{
+  content: ', ';
+}
+footer nav ul li:last-child:after{
+  content: '';
+}
+footer nav {
+    margin-bottom: 1em;
+}
+
 strong {
   color:#222;
   font-weight:700;
@@ -132,7 +149,7 @@ section, footer {
 
 section {
     padding-top: 12em;
-    padding-bottom:6em;
+    padding-bottom:3em;
 }
 
 small {

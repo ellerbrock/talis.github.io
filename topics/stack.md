@@ -2,6 +2,7 @@
 layout: site
 title: Stack
 body_class: stack
+category: Architecture
 ---
 
 This article outlines the accepted current technical stack. If your project is implemented with these technologies,
@@ -28,10 +29,14 @@ trailblaze for our users.
 
 We have strong cross-team skill base in Java, PHP and Node.
 
-### Frameworks
+#### Frameworks
 
 * F3[^1] versions 2 and 3 (PHP)
 * Express[^2] versions 3 and 4 (Node)
+
+#### Background jobs
+
+We use resque[^3], which has client libraries available for both PHP[^4] and Node[^5], amongst others.
 
 ## Client side
 
@@ -54,7 +59,7 @@ again makes extensive use of Ruby.
 
 ## Persistence and storage
 
-### DocumentDB: MongoDB
+#### Document DB: MongoDB
 
 MongoDB is the swiss army knife of NoSQL databases. There are plenty that do certain things better, but it has a broad
 feature set, recruitable talent pool, large community and vendor base and is a good starting point for many problems
@@ -63,16 +68,16 @@ requiring a NoSQL approach.
 As a company, we understand it's limitations and how to operate and scale it. We have 3 years' production experience at
 scale. This experience is more important than what you may have read about it on Hacker News.
 
-### KeyValue: Redis
+#### KeyValue store: Redis
 
 Redis is a key value store. It has extensive community and vendor support. TODO: more information
 
-### Free text search: ElasticSearch
+#### Free text search: ElasticSearch
 
 Our search requirements are relatively pedestrian so we sidestep the complexity of configuring and operating Solr by
 using ElasticSearch. We consider search to be ephemeral so make sure all indexes can be rebuilt from another datasource.
 
-### Relational: Postgres
+#### Relational: Postgres
 
 If you need a relational database use Postgres. However, we don't currently use relational databases anywhere in
 production.
@@ -84,3 +89,6 @@ We currently use Amazon AWS as our production supplier.
 
 [^1]: [Fat-Free Framework](http://fatfreeframework.com/home)
 [^2]: [Express](http://expressjs.com/)
+[^3]: [Resque](https://github.com/resque/resque)
+[^4]: [php-resque](https://github.com/chrisboulton/php-resque)
+[^5]: [node-resque](https://github.com/taskrabbit/node-resque)

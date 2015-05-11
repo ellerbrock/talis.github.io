@@ -2,6 +2,7 @@
 layout: site
 title: APIs
 body_class: apis
+category: Architecture
 ---
 
 Article outline:

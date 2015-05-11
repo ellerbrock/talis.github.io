@@ -2,6 +2,7 @@
 layout: site
 title: Microapps
 body_class: microapps
+category: Architecture
 ---
 
 Article outline:
