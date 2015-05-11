@@ -53,6 +53,16 @@ The specific design of the API should respect the general [API design guidelines
 Optionally, we may provide additional client support via open-sourced, language-specific libraries[^12][^13].
 
 
+### Backends for frontends
+
+Typically, the client side of our applications will not use primitive APIs directly. Instead, we use the backend for
+frontends pattern, whereby apps have a Gateway API on the server side which is part of the app and might weave together
+one or more calls to primitives.
+
+Amongst other things, this pattern ensures frontend code, which should mimic the user conceptual model, is not tightly
+bound to primitives, which mimic the system model.
+
+
 ### Creating a new primitive
 
 Your first pull request when creating a new primitive should contain no code. Instead, it should:
