@@ -1,4 +1,5 @@
 <footer>
+    {% if page.category %}
     <nav>
         <h4>Other topics in {{ page.category }}:</h4>
         <ul>
@@ -11,5 +12,6 @@
             {% endfor %}
         </ul>
     </nav>
+    {% endif %}
     <p><small>Hosted on GitHub Pages &mdash; <a href="https://github.com/talis">&copy; Talis Group Ltd</a></small></p>
 </footer>
