@@ -1,0 +1,51 @@
+# Engineering handbook
+
+The engineering handbook documents our official approach to engineering. See https://talis.github.io for the latest
+peer-reviewed version.
+
+The site is designed to read like a book which is why it emphasises white space and doesn't look like a web app. Any
+styling changes that promote this ethos are welcomed.
+
+## How it works
+
+This is a special GitHub pages repo, powered by Jekyll. The master is build automatically by GitHub and displayed at
+https://talis.github.io.
+
+If you wish to make changes, create a branch and submit a pull request.
+
+## Build & run locally
+
+```
+sudo apt-get install ruby-dev nodejs
+git clone https://github.com/talis/talis.github.io.git
+cd talis.github.io
+bundle install
+jekyll serve
+```
+
+Now go to http://127.0.0.1:4000
+
+## Deploy
+
+To deploy to http://talis.github.io, merge to `master`. Changes will be applied after a short wait.
+
+## Contributing to the handbook
+
+*Anyone* can contribute. This handbook is written by engineers, for engineers. However, when contributing or reviewing
+the contributions of others, consider:
+
+* Are you adding global knowledge, or is your topic specific to one or a small subset of projects?
+* Are you adding accepted wisdom and practice, or just your own spin on things? Tip: A pull request widely shared
+usually resolves this ;-)
+* Is your contribution both concise and precise?
+
+The [rules for merging to master](https://talis.github.io/code-reviews.html) are the same as any other Talis repo.
+
+### Style guide
+
+* Read back what you have written, and try writing it again using half the words
+* The site is designed to read like a book. Inline links should only point elsewhere in the guide. For external links
+[use footnotes](http://kramdown.gettalong.org/syntax.html#footnotes)
+* Keep markdown source strictly to 120 columns wide or less.
+
+

@@ -1,0 +1,86 @@
+<nav>
+    <ul>
+        <li{% if page.body_class == 'charter' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/charter.html">Our charter</a>
+        </li>
+    </ul>
+    <h3>Code</h3>
+    <ul>
+        <li{% if page.body_class == 'code-style' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/code-style.html">Style</a>
+        </li>
+        <li{% if page.body_class == 'code-reviews' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/code-reviews.html">Reviews</a>
+        </li>
+        <li{% if page.body_class == 'testing' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/testing.html">Testing</a>
+        </li>
+        <li{% if page.body_class == 'code-standards' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/code-standards.html">Standards</a>
+        </li>
+    </ul>
+    <h3>Starting a new project</h3>
+    <ul>
+        <li{% if page.body_class == 'names' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/names.html">Naming conventions</a>
+        </li>
+        <li{% if page.body_class == 'source-control' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/source-control.html">Source Control</a>
+        </li>
+        <li{% if page.body_class == 'builds' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/builds.html">Builds</a>
+        </li>
+        <li{% if page.body_class == 'ci' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/ci.html">Continuous integration</a>
+        </li>
+        <li{% if page.body_class == 'documentation' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/documentation.html">Documentation</a>
+        </li>
+        <li{% if page.body_class == 'env' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/env.html">Environments</a>
+        </li>
+        <li{% if page.body_class == 'prod-check' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/prod-check.html">Production checklist</a>
+        </li>
+    </ul>
+    <h3>Architecture</h3>
+    <ul>
+        <li{% if page.body_class == 'microservices' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/microservices.html">Microservices</a>
+        </li>
+        <li{% if page.body_class == 'apis' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/apis.html">API Design</a>
+        </li>
+        <li{% if page.body_class == 'persistence' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/persistence.html">Persistence</a>
+        </li>
+    </ul>
+    <h3>Operations</h3>
+    <ul>
+        <li{% if page.body_class == 'provisioning' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/provisioning.html">Provisioning</a>
+        </li>
+        <li{% if page.body_class == 'cfgmgmt' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/cfgmgmt.html">Configuration Management</a>
+        </li>
+        <li{% if page.body_class == 'deployments' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/deployments.html">Deployments</a>
+        </li>
+        <li{% if page.body_class == 'monitoring' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/monitoring.html">Monitoring</a>
+        </li>
+        <li{% if page.body_class == 'alerts' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/alerts.html">Alerts</a>
+        </li>
+        <li{% if page.body_class == 'incidents' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/incidents.html">Live incidents</a>
+        </li>
+    </ul>
+    <h3>Security</h3>
+        <li{% if page.body_class == 'protocols' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/protocols.html">Protocols</a>
+        <li{% if page.body_class == 'keys' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/keys.html">Keys</a>
+        </li>
+        </li>
+</nav>
