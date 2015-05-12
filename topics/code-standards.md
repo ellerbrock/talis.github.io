@@ -31,7 +31,6 @@ you should be satisfied with the level of debug.
 * Repetitive code - DRY [^6]
 * Large classes
 * Poor separation of concerns[^7]
-* Repetitive code
 * Badly named file/class names
 * Undefined and redundant variables
 * Unnecessary code where a command might do the trick
@@ -46,7 +45,6 @@ We need to be mindful of how our applications perform on many levels. We should 
 * Inefficient database queries
 * Missing indexes on databases
 * Infinite loops/recursion
-* Inefficient code
 * Opening up connections to database/other services and not closing them
 * Incorrect callback names (as appropriate) - or callbacks triggered too early
 
