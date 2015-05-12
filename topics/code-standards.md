@@ -13,67 +13,67 @@ The following checklist should be applied when conducting a 90% [code review](co
 * Have credentials been added to the code?
 * Is the new code opening up a vulnerability? We should all be aware of methods of attack - XSS[^1] and Injection
 attacks for example.
-* If assets are available on SSL, always use `https://` - otherwise assets should be a Protocol Relative URL[^2]
+* Assets should be loaded with a a Protocol Relative URL[^2]
 
 ### Code
-* The repository / project should be Continuously Integrated - see [Continuous Integration](ci.html) for specifics.
-* Does the app work when you run it? The code might look ok, but it may look terrible, produce Javascript errors and
-clog up the error logs.
-* Is there commented out code, but left in source control?
+* The repository/project should be Continuously Integrated - see [Continuous Integration](ci.html) for specifics.
+* The code should compile and run without error.
+* Commented out code should be removed.
 * Look out for spelling mistakes.
-* Is there enough debug/logging? If you were personally supporting this pull request on your own after merging,
-would you be satisfied with the level of debug?
-* Is the code defensive enough? ```if(var[1])``` has potential to break.
-* Have signatures of functions changed? Are there redundant variables left lying around in the code?
-* Some projects / repositories are translatable - is there appropriate levels of i18n functionality.
-* Look out for missing / badly named / misspelt tags.
+* Check for adequate debug/logging. If you were personally supporting this pull request on your own after merging,
+you should be satisfied with the level of debug.
+* Ensure code is defensive. ```if(var[1])``` has potential to break.
+* If signatures of functions have changed, check for redundant variables.
+* If the project supports i18n[^3] then check all user strings have been translated.[^4]
+* Look out for missing/badly named/misspelt tags.
 * If introducing a new external dependency, the appropriate version should be locked on to.
 * Pick up issues that could/should have been picked up by a linter. If there is no linter, question why it hasn't been added.
-* Code smells:[^3]
-    * Repetitive code
+* Code smells:[^5]
+    * Repetitive code - DRY [^6]
     * Large classes
-    * Poor separation of concerns[^4]
+    * Poor separation of concerns[^7]
     * Repetitive code
-    * Badly named file / class names
+    * Badly named file/class names
     * Undefined and redundant variables
     * Unnecessary code where a command might do the trick
-    * Does the code look complicated and is it hard to understand? KISS.
-    * Are we making use of constants?
+    * Does the code look complicated and is it hard to understand? KISS. [^8]
+    * Use constants
     * ```// Are there enough comments in the code?```
 
 ### Performance
 We need to be mindful of how our applications perform on many levels. We should look for changes that adversely
-  affect response times, as well as any other negative effects the new code might have. Is there a modal that can never
-  be closed? Or a route that can trigger a 500 in certain situations? Look for:
+  affect response times, as well as any other negative effects the new code might have. Look for:
 
 * Inefficient database queries
 * Missing indexes on databases
-* Infinite loops / recursion
+* Infinite loops/recursion
 * Inefficient code
-* Opening up connections to database / other services and not closing them
-* Incorrect callback names (as appropriate) - or a callback triggered too early?
+* Opening up connections to database/other services and not closing them
+* Incorrect callback names (as appropriate) - or callbacks triggered too early
 
 ### Tests
-* Are there tests?
-* Look for flaky tests - might they fail some of the time?
-* Do they mock / stub / spy the right things? Do they mock too much?
-* Do tests rely on external services not under our control? Relying on anything external is a recipe for a failing test.
+* Ensure there are tests
+* Mocking/stubbing/spying should be used appropriately. See [testing](testing.html) for more specifics.
+* Tests that rely on external services not under our control usually result in failing tests.
 * Tests should be atomic and pass if they are run singularly or part of the suite. They should never depend on
 being run in a specific order or rely on the output of another test.
-* Is the code making full use of assertions? ```assertEquals(true, $yourVal);``` vs ```assertTrue($yourVal);```
-* See [testing](testing.html) for more specifics.
+* Tests should make full use of assertions ```assertEquals(true, $yourVal);``` vs ```assertTrue($yourVal);```
 
 ### Documentation
-* Is there documentation - see [charter](charter.html).
+* There should be documentation - see [charter](charter.html).
 * You should add descriptions to all functions regardless of access, define what they return and if they throw
 exceptions
 * Params should have a type and description
-* If in doubt, check out JSDoc[^5] or phpDocumentor[^6]
+* If in doubt, check out JSDoc[^9] or phpDocumentor[^10]
 
 
 [^1]: [XSS](http://en.wikipedia.org/wiki/Cross-site_scripting)
 [^2]: [The Protocol-relative URL](http://www.paulirish.com/2010/the-protocol-relative-url/)
-[^3]: [Code smells](https://sourcemaking.com/refactoring/bad-smells-in-code)
-[^4]: [Separation of Concerns](http://en.wikipedia.org/wiki/Separation_of_concerns)
-[^5]: [JSDoc](http://usejsdoc.org/)
-[^6]: [phpDocumentor](http://www.phpdoc.org/docs/latest/index.html)
+[^3]: [Localization vs. Internationalization](http://www.w3.org/International/questions/qa-i18n)
+[^4]: [Gettext](http://php.net/manual/en/book.gettext.php)
+[^5]: [Code smells](https://sourcemaking.com/refactoring/bad-smells-in-code)
+[^6]: [Don't repeat yourself](http://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
+[^7]: [Separation of Concerns](http://en.wikipedia.org/wiki/Separation_of_concerns)
+[^8]: [KISS principle](http://en.wikipedia.org/wiki/KISS_principle)
+[^9]: [JSDoc](http://usejsdoc.org/)
+[^10]: [phpDocumentor](http://www.phpdoc.org/docs/latest/index.html)
