@@ -4,9 +4,9 @@ title: Builds
 body_class: builds
 ---
 
-As part of our commitment to Continuous Integration[^1], we should configure an automated build for each of the products and code libraries that we release or ship.
+As part of our commitment to Continuous Integration[^1], we configure an automated build for each of the products and code libraries that we release or ship.
 
-There are many ways to script an automated build, we currently use a mixture of ANT[^2], Grunt[^3] and in some cases Make[^4]. Sometimes the selection of tool is driven by our preference and experiences, at other times it is driven by kind of project we are working on. For example we have to use Maven[^5] for building some of Java projects because its the most appropriate tool for that.
+There are many ways to script an automated build, we currently use a mixture of ANT[^2], Grunt[^3] and in some cases Make[^4]. Sometimes the selection of tool is driven by our preference and experiences, at other times it is driven by kind of project we are working on. For example we use Maven[^5] for building some of Java projects because its the most appropriate tool for that.
 
 ### Build Steps
 
