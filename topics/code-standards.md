@@ -18,6 +18,7 @@ attacks for example.
 * The code should compile and run without error.
 * Commented out code should be removed.
 * Look out for spelling mistakes.
+* Unless clearly stated, debug statements (e.g. `console.log`) should be removed.
 * Check for adequate debug/logging. If you were personally supporting this pull request on your own after merging,
 you should be satisfied with the level of debug.
 * Ensure code is defensive. ```if(var[1])``` has potential to break.
