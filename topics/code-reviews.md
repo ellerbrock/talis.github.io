@@ -30,6 +30,7 @@ Please do not comment on these PRs unless the owner asks you to.
 
 Don't always rely on the diff - depending on the size of the changes in the pull request, it might be a good idea to
 check out the branch locally. This gives you a number of benefits:
+
 * You can open up your IDE and see the code as it was written. A variable may have been renamed - you can search in
 your IDE for the old values.
 * If there is a visual change, you can spin up the app and see what it looks like. The code might look ok, but it may
