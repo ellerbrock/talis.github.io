@@ -6,7 +6,7 @@ body_class: code-reviews
 
 
 All code at Talis must go through peer review before it can be merged into `master`. This can be done by
-raising a pull request on the relevant github repository and asking your colleagues for input.
+raising a pull request on the relevant GitHub repository and asking your colleagues for input.
 
 ### 30% vs 90%
 
@@ -25,6 +25,18 @@ These are pull requests raised by developers wishing to track their own changes,
 later review.
 
 Please do not comment on these PRs unless the owner asks you to.
+
+### How do I perform a Code Review?
+
+Don't always rely on the diff - depending on the size of the changes in the pull request, it might be a good idea to
+check out the branch locally. This gives you a number of benefits:
+* You can open up your IDE and see the code as it was written. A variable may have been renamed - you can search in
+your IDE for the old values.
+* If there is a visual change, you can spin up the app and see what it looks like. The code might look ok, but it may
+look terrible.
+* You definitely won't see errors such as browsers blocking access to assets just by looking at a diff - you might spot
+ some bugs by just loading the changes.
+* You can run the local build and see any potential breakages.
 
 ### When can I hit merge?
 

@@ -20,7 +20,7 @@ sudo apt-get install ruby-dev nodejs
 git clone https://github.com/talis/talis.github.io.git
 cd talis.github.io
 bundle install
-jekyll serve
+bundle exec jekyll serve
 ```
 
 Now go to http://127.0.0.1:4000
