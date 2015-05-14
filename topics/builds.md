@@ -6,23 +6,47 @@ body_class: builds
 
 As part of our commitment to Continuous Integration[^1], we configure an automated build for each of the products and code libraries that we release or ship.
 
-There are many ways to script an automated build, we currently use a mixture of ANT[^2], Grunt[^3] and in some cases Make[^4]. Sometimes the selection of tool is driven by our preference and experiences, at other times it is driven by kind of project we are working on. For example we use Maven[^5] for building some of Java projects because its the most appropriate tool for that.
+There are many ways to script an automated build, we currently use a mixture of ANT[^2], Grunt[^3] and in some cases Make[^4]. Sometimes the selection of tool is driven by our preference and experiences, at other times it is driven by the kind of project we are working on. For example we use Maven[^5] for building some of our Java projects because it's the most appropriate tool.
+
 
 ### Build Steps
 
 Irrespective of which tool you select, as a minimum an automated build should:
 
 * be executed on a clean, provisioned, environment
-* after checking out code, use relevant package managers to install dependencies e.g. `npm`, `composer`, `bower` etc.
-* run any configured linters to identify code hygiene issues. The build should fail if there are code hygiene issues. If your build doesnt include a linter, then you should add one.  
+* use relevant package managers to install dependencies e.g. `npm`, `composer`, `bower` etc.
+* run any configured linters to identify code hygiene issues. The build should fail if there are code hygiene issues. If your build doesn't include a linter, then you should add one.  
 * clear and load any base data the build requires for integration / browser tests  
 * run test suites and generate test reports. The build should fail if there are test failures.
-  * Furthermore there should be no dependencies between tests; the order of execution of tests should not affect the build.
-* build a named distribution e.g. `<project>-<githash>.tar.gz`
-  * the distribution should only include code to be released.
-  * the distribution should contain 3rd Party Libraries the release depends on. For example if your project relies on packages in `npm` then the distribution should include the `node_modules` folder with those packages. So we can guarantee that the libraries included in the distribution are the ones we tested against.
+* build a named distribution
 * upload the distribution to a location that our provisioning/deployment tools can retrieve the distribtion from e.g. `s3://aspire-operations`.
 * store / make available logs generated during the build
+
+### Build script common targets
+
+Irrespective of which build tool is used (ANT or Grunt), we maintain a common interface for our build scripts. Both tools allow you to create named targets/tasks. 
+
+* init: _initalises the environment, checks that requirements are met, installs any dependencies_ 
+* check-code: _run any linters, code hygiene tools_
+* unit-test: _run unit tests_
+* load-base-data: _loads any base / test data_ (if applicable)
+* integration-test: _run integration tests_ (if applicable)
+* browser-test: _run browser tests_ (if applicable)
+* dist: _build the distribution_
+
+
+
+
+
+### Distributions
+
+An important responsibility of the automated build is to produce the distribution. The only requirement for using it should be to unpack it onto an environment provisioned to run it. A distribution should:
+
+* be named using this convention. `<project>-<git-short-commit-hash>.tar.gz`. 
+* only include code to be released.
+* contain 3rd Party Libraries that the release depends on. For example if your project relies on packages in `npm` then the distribution should include the `node_modules` folder with those packages. So we can guarantee that the libraries included in the distribution are the ones we tested against. 
+* not include any development dependencies.
+
 
 [^1]: [Continuous Integration](http://martinfowler.com/articles/continuousIntegration.html) 
 [^2]: [ANT](http://ant.apache.org/)
