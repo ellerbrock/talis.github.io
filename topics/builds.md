@@ -24,7 +24,9 @@ Irrespective of which tool you select, as a minimum an automated build should:
 
 ### Build script common targets
 
-Irrespective of which build tool is used (ANT or Grunt), we maintain a common interface for our build scripts. Both tools allow you to create named targets/tasks. 
+Both ANT and Grunt allow you to create named `targets` or `tasks`, and both allow us to create meta tasks i.e a task which is a wrapper for calls to a set of other tasks. So irrespective of which build tool is used we can maintain a common interface for our build scripts. 
+
+Here are the common targets all builds should expose: 
 
 * init: _initalises the environment, checks that requirements are met, installs any dependencies_ 
 * check-code: _run any linters, code hygiene tools_
@@ -33,9 +35,6 @@ Irrespective of which build tool is used (ANT or Grunt), we maintain a common in
 * integration-test: _run integration tests_ (if applicable)
 * browser-test: _run browser tests_ (if applicable)
 * dist: _build the distribution_
-
-
-
 
 
 ### Distributions
