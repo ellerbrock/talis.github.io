@@ -21,4 +21,4 @@ the rot [^2]
 [^1]: [Code ownership](https://code.facebook.com/posts/263824650408138/engineering-culture-series-code-ownership/ )
 [^2]: [Broken windows theory](http://en.wikipedia.org/wiki/Broken_windows_theory)
 [^3]: [The Twelve-Factor App](http://12factor.net/)
-[^4]: T. Boam, 2015
+[^4]: [T. Boam](https://www.linkedin.com/profile/view?id=396884073), 2015
