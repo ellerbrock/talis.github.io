@@ -80,9 +80,6 @@ should be considered unstable and unsavory. Pick these up in [code reviews](code
 ### Web Sockets
 
 You should consider web sockets where an API is exceptionally chatty, but a fallback to REST should also be provided.
-* Nouns not verbs
-* Versioning & deprecation
-* Documentation
 
 ### Authentication
 
