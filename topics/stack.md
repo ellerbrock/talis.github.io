@@ -30,6 +30,9 @@ trailblaze for our users.
 Our target server OS is Ubuntu. This means all production, staging, test and vagrant development environments are using
 Ubuntu.
 
+You can use what you like on your development machine but you must have access locally to run and test code on Ubuntu,
+ideally via the project's Vagrant image or your own local VM.
+
 ## Server side
 
 We have strong cross-team skill base in Java, PHP and Node.
