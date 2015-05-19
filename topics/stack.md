@@ -16,7 +16,7 @@ long as you build consensus that deviating from the usual stack is the right thi
 making this decision are:
 
 1. *Risk:* For example, am I swapping out the main DB technology serving most of our traffic or just experimenting on a
-new feature ;used by a handful of users?
+new feature for a handful of users?
 1. *Real ROI* What potential does the new approach really have over the old? Is there likely to be a good return on us
 having to learn a new technology given its promised benefits?
 1. *Grass is not always greener:* Are we just trading the current known limitations of our existing approach for a
@@ -36,7 +36,8 @@ We have strong cross-team skill base in Java, PHP and Node.
 
 #### Background jobs
 
-We use resque[^3], which has client libraries available for both PHP[^4] and Node[^5], amongst others.
+We use resque[^3], which has client libraries available for both PHP[^4] and Node[^5], amongst others. If you are
+working on a gearman job, migrate it to resque.
 
 ## Client side
 
@@ -70,7 +71,7 @@ scale. This experience is more important than what you may have read about it on
 
 #### KeyValue store: Redis
 
-Redis is a key value store. It has extensive community and vendor support. TODO: more information
+Redis is a key value store. It has extensive community and vendor support.
 
 #### Free text search: ElasticSearch
 
@@ -85,6 +86,14 @@ production.
 ## Cloud computing
 
 We currently use Amazon AWS as our production supplier.
+
+Where possible, we prefer to use services tailored for the technology, rather than role our own environment. For
+example, we prefer Redis via Elasticache, vs. configuring our own instances to provide redis. We prefer MongoDB via
+Mongolabs, rather than operate our own instances.
+
+However, for larger scale rollouts there is a tipping point where rolling and operating our own becomes more economic.
+
+But when starting out on a new project, tend towards managed infrastructure.
 
 
 [^1]: [Fat-Free Framework](http://fatfreeframework.com/home)
