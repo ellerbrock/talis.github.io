@@ -7,27 +7,29 @@ body_class: code-standards
 The following checklist should be applied when conducting a 90% [code review](code-reviews.html).
 
 ### Security
-* Have credentials been added to the code?
+* Code should *never* contain credentials. These are a property of the environment.
 * Is the new code opening up a vulnerability? We should all be aware of methods of attack - XSS[^1] and Injection
 attacks for example.
 * Assets should be loaded with a a Protocol Relative URL[^2]
 
 ### General
-* Are we making a broken window worse? See [charter](charter.html).
+* Fix any broken windows. They are not someone else's problem. See [charter](charter.html).
 * The repository/project should be Continuously Integrated - see [Continuous Integration](ci.html) for specifics.
 * The code should compile and run without error.
-* Commented out code should be removed.
-* Look out for spelling mistakes.
-* Unless clearly stated, debug statements (e.g. `console.log`) should be removed.
-* Check for adequate debug/logging. If you were personally supporting this pull request on your own after merging,
+* No commented out code blocks. Source control has history for a reason.
+* Look out for spelling mistakes, both in user text and also code itself
+* Debug statements to the console (e.g. `echo`, `var_dump`, `System.out.print`, `console.log`) should be removed. Use
+debug logging instead.
+* Check for adequate logging. If you were personally supporting this pull request on your own after merging,
 you should be satisfied with the level of debug.
 * Ensure code is defensive. ```if(var[1])``` has potential to break.
 * If signatures of functions have changed, check for redundant variables.
 * If the project supports i18n[^3] then check all user strings have been translated.[^4]
 * Look out for missing/badly named/misspelt tags.
-* If introducing a new external dependency, the appropriate version should be locked on to.
-* Pick up issues that could/should have been picked up by a linter. If there is no linter, question why it hasn't been added.
-* Don't commit TODOs without referencing an open issue for discussion
+* If introducing a new external dependency, the appropriate version should be locked on to, rather than using fuzzy
+versioning.
+* Pick up issues that could/should have been picked up by a linter. If there is no linter, ask for one to be added.
+* Don't allow new TODOs without referencing an open issue for discussion.
 
 ### Code smells:[^5]
 * Repetitive code - DRY [^6]
