@@ -91,7 +91,8 @@ Where possible, we prefer to use services tailored for the technology, rather th
 example, we prefer Redis via Elasticache, vs. configuring our own instances to provide redis. We prefer MongoDB via
 Mongolabs, rather than operate our own instances.
 
-However, for larger scale rollouts there is a tipping point where rolling and operating our own becomes more economic.
+However, for larger scale rollouts there is a tipping point where rolling and operating our own becomes more economic,
+both in terms of machine image and actual hardware.
 
 But when starting out on a new project, tend towards managed infrastructure.
 
