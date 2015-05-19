@@ -33,10 +33,8 @@ check out the branch locally. This gives you a number of benefits:
 
 * You can open up your IDE and see the code as it was written. A variable may have been renamed - you can search in
 your IDE for the old values.
-* If there is a visual change, you can spin up the app and see what it looks like. The code might look ok, but it may
-look terrible.
-* You definitely won't see errors such as browsers blocking access to assets just by looking at a diff - you might spot
- some bugs by just loading the changes.
+* You can spin up the app and taking it for a test drive. The code might look ok, but the UI may look terrible and
+spam the console with errors, APIs might be hard to use, and it might run like a dog.
 * You can run the local build and see any potential breakages.
 
 ### When can I hit merge?
