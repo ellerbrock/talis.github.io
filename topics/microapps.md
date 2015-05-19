@@ -5,7 +5,7 @@ body_class: microapps
 category: Architecture
 ---
 
-Similar to [[microservices](microservices.html)]([microservices](microservices.html).html), microapps are small, well-defined applications which provide a small
+Similar to [microservices](microservices.html), microapps are small, well-defined applications which provide a small
 subset of related user functionality.
 
 For the user, they exist not standalone, but within a broader application context. But like [microservices](microservices.html) the runtime of
