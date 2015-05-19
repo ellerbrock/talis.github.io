@@ -12,7 +12,7 @@ independent services which are loosely coupled. This enables:
 1. *Technical freedom.* Because each microservice has a smaller scope than a monolithic app, we can choose the best
 technology for the job at hand rather than lock in technical decisions for the long term. As better technologies emerge,
 we can refactor specific microservices to take advantage more easily than with a monolith.
-1. *Efficiency.* Because each microservice has a small scope, it infrastructure and scaling requirements can be
+1. *Efficiency.* Because each microservice has a small scope, its infrastructure and scaling requirements can be
 considered independently. Some services can stay small whereas others can be backed by larger infrastructure. Services
 requiring high CPU can use different infrastructure to those requiring big storage.
 1. *Agility.* When we start a new application or service, we already have a platform of capabilities ready to use at our
