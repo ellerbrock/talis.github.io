@@ -76,8 +76,8 @@ Not:
    http://api.talis.com/my-app/1/thing/1234
 ```
 
-Un-versioned paths usually default or redirect to the latest implementation so their use in shipped and packaged code
-should be considered unstable and unsavory. Pick these up in [code reviews](code-reviews.html).
+Un-versioned paths usually default or redirect to the current complete major version, so their use in shipped and
+packaged code should be considered unstable and unsavory. Pick these up in [code reviews](code-reviews.html).
 
 ### Web Sockets
 
