@@ -25,6 +25,11 @@ new set?
 has wider traction that's a good sign. Leave pioneering brand new technology to Google and Facebook, instead let's
 trailblaze for our users.
 
+## Operating System
+
+Our target server OS is Ubuntu. This means all production, staging, test and vagrant development environments are using
+Ubuntu.
+
 ## Server side
 
 We have strong cross-team skill base in Java, PHP and Node.
