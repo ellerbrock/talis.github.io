@@ -56,6 +56,8 @@ Use the following parameters rather than inventing new ones, unless the purpose 
 
 ### Versioning
 
+We version using an integer in the path. Only increment this integer when you implement a breaking change.
+
 The convention is to version your APIs from the root of the path. There should be nothing other than the domain name
 before the version.
 
