@@ -95,14 +95,10 @@ production.
 
 We currently use Amazon AWS as our production supplier.
 
-Where possible, we prefer to use services tailored for the technology, rather than role our own environment. For
-example, we prefer Redis via Elasticache, vs. configuring our own instances to provide redis. We prefer MongoDB via
-Mongolabs, rather than operate our own instances.
+Where possible, we prefer to use managed services tailored for the technology, rather than provision and operate our own. For
+example, we prefer Redis via the Elasticache service, vs. provisioning and operating our own instances to provide Redis. We prefer MongoDB via the managed MongoLabs service, rather than provision and operate our own MongoDB instances.
 
-However, for larger scale rollouts there is a tipping point where rolling and operating our own becomes more economic,
-both in terms of machine image and actual hardware.
-
-But when starting out on a new project, tend towards managed infrastructure.
+However, for larger scale rollouts there is a tipping point where provisioning and managing our own becomes more economic, and in some circumstance provides greater functionality.
 
 
 [^1]: [Fat-Free Framework](http://fatfreeframework.com/home)
