@@ -31,7 +31,7 @@ To deploy to http://talis.github.io, merge to `master`. Changes will be applied 
 
 ## Contributing to the handbook
 
-*Anyone* can contribute. This handbook is written by engineers, for engineers. However, when contributing or reviewing
+*Anyone* at Talis can contribute. This handbook is written by engineers, for engineers. However, when contributing or reviewing
 the contributions of others, consider:
 
 * Are you adding global knowledge, or is your topic specific to one or a small subset of projects?
