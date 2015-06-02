@@ -39,7 +39,7 @@ the contributions of others, consider:
 usually resolves this ;-)
 * Is your contribution both concise and precise?
 
-The [rules for merging to master](https://talis.github.io/code-reviews.html) are the same as any other Talis repo.
+The [rules for merging to master](https://talis.github.io/topics/code-reviews.html) are the same as any other Talis repo.
 
 ### Style guide
 
