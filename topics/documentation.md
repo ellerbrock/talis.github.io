@@ -11,7 +11,7 @@ Each project should have a README.md in the project's root folder. This should c
 * How to build the project
 * If it is a deployable, how to run it
 * If it is a library, a quickstart on how to use it
-* If it has an API, a link to more detailed API documentation.
+* If it has an API, a link to more detailed API documentation
 
 ### Infra Runbook
 

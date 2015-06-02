@@ -74,8 +74,8 @@ MongoDB is the swiss army knife of NoSQL databases. There are plenty that do cer
 feature set, recruitable talent pool, large community and vendor base and is a good starting point for many problems
 requiring a NoSQL approach.
 
-As a company, we understand it's limitations and how to operate and scale it. We have 3 years' production experience at
-scale. This experience is more important than what you may have read about it on Hacker News.
+As a company, we understand its limitations and how to operate and scale it. We have 3 years' production experience at
+scale. This experience is more important than anything you may have read about it on Hacker News.
 
 #### KeyValue store: Redis
 

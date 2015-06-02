@@ -33,9 +33,9 @@ check out the branch locally. This gives you a number of benefits:
 
 * You can open up your IDE and see the code as it was written. A variable may have been renamed - you can search in
 your IDE for the old values.
-* You can spin up the app and taking it for a test drive. The code might look ok, but the UI may look terrible and
+* You can spin up the app and take it for a test drive. The code might look ok, but the UI may look terrible and
 spam the console with errors, APIs might be hard to use, and it might run like a dog.
-* You can run the local build and see any potential breakages.
+* You can run the local build (including tests) and see any potential breakages.
 
 ### When can I hit merge?
 
