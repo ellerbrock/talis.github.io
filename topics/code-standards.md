@@ -45,7 +45,7 @@ versioning.
 
 ### Performance
 We need to be mindful of how our applications perform on many levels. We should look for changes that adversely
-  affect response times, as well as any other negative effects the new code might have. Among other things, look for:
+  affect response times, as well as any other negative effects the new code might have. Amongst other things, look for:
 
 * Inefficient database queries
 * Missing indexes on databases
