@@ -4,23 +4,23 @@ title: Alerts
 body_class: alerts
 ---
 
-This artical outlines how our alerting mechanism functions from inception to resolution.  For a project to be provisioned to the Live environment it must be able to generate alerts if the project is not running in its normal state.
+This article outlines how our alerting mechanism functions from inception to resolution.  For a project to be provisioned to the Live environment it must be able to generate alerts if the project is not running in its normal state.
 
 ### Status
 
 Alerts can have one of three statuses
 
 1. OK - the alert has passed and the service is operating normally
-2. Warning - the alert has passed a warning threshold, the service is operating normally but has unsual activity
-3. Critical - the alert has not passed, the service may have reduced functionality or not operating at all 
+2. Warning - the alert has passed a warning threshold, the service is operating normally but has unusual activity
+3. Critical - the alert has not passed, the service may have reduced functionality or is not operating at all 
 
 ### Creation
 
-Alerts are currently raised via Sensu[^1] checks and Pingdom[^2] checks.  An alert should always be set in a critical status and only alert ok if the check receives the expected result.
+Alerts are currently raised via Sensu[^1] checks and Pingdom[^2] checks.  An alert should always be set in a critical status and only alert OK if the check receives the expected result.
 
 ### Handlers
 
-Alerts can have one or more handlers.  A handler is used to funnel the alerts to the correct place.  Currently the handlers are used to divide alerts to the neccessary PagerDuty service.  Current handlers are:
+Alerts can have one or more handlers.  A handler is used to funnel the alerts to the correct place.  Currently the handlers are used to divide alerts into the necessary PagerDuty service.  Current handlers are:
 
 1. TADC - alerts for Talis Aspire Digitised Content
 2. TN - alerts for Talis primitives and the Talis Network

@@ -22,8 +22,9 @@ attacks for example.
 debug logging instead.
 * Check for adequate logging. If you were personally supporting this pull request on your own after merging,
 you should be satisfied with the level of debug.
+* Similarly check that adequate analytics have been added (where appropriate).
 * Ensure code is defensive. ```if(var[1])``` has potential to break.
-* If signatures of functions have changed, check for redundant variables.
+* If signatures of functions have changed, check for redundant variables. Also, does the documentation block for the function correctly reflect its intended function and the parameters it accepts and values it returns.
 * If the project supports i18n[^3] then check all user strings have been translated.[^4]
 * Look out for missing/badly named/misspelt tags.
 * If introducing a new external dependency, the appropriate version should be locked on to, rather than using fuzzy
@@ -31,12 +32,12 @@ versioning.
 * Pick up issues that could/should have been picked up by a linter. If there is no linter, ask for one to be added.
 * Don't allow new TODOs without referencing an open issue for discussion.
 
-### Code smells:[^5]
+### Code smells [^5]
 * Repetitive code - DRY [^6]
 * Large classes
 * Poor separation of concerns[^7]
 * Badly named file/class names
-* Undefined and redundant variables
+* Undefined, badly named or redundant variables
 * Unnecessary code where a command might do the trick
 * Does the code look complicated and is it hard to understand? KISS. [^8]
 * Use constants
@@ -44,13 +45,15 @@ versioning.
 
 ### Performance
 We need to be mindful of how our applications perform on many levels. We should look for changes that adversely
-  affect response times, as well as any other negative effects the new code might have. Look for:
+  affect response times, as well as any other negative effects the new code might have. Amongst other things, look for:
 
 * Inefficient database queries
 * Missing indexes on databases
 * Infinite loops/recursion
+* Opportunities to break out of a loop early when appropriate
 * Opening up connections to database/other services and not closing them
 * Incorrect callback names (as appropriate) - or callbacks triggered too early
+* Situations where a callback is made but code can continue to execute after this point - with unintentional consequences
 
 ### Tests
 * Ensure there are appropriate tests (unit/integration/browser). See [testing](testing.html) for more specifics.
@@ -58,7 +61,7 @@ We need to be mindful of how our applications perform on many levels. We should 
 * Tests should be atomic and pass if they are run singularly or part of the suite. They should never depend on
 being run in a specific order or rely on the output of another test.
 * Tests should make full use of assertions ```assertEquals(true, $yourVal);``` vs ```assertTrue($yourVal);```
-* Waiting for elements on a page during browser tests is much preferred to `sleep` commands
+* Waiting for elements on a page during browser tests is much preferred to `sleep` commands.
 
 ### Documentation
 * There should be documentation - README up to date, apiary docs (if applicable), wiki page and/or infra runbook
