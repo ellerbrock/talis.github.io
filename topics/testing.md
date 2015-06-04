@@ -4,7 +4,7 @@ title: Testing
 body_class: testing
 ---
 
-As with most things, projects at Talis use test frameworks that are appropriate for their tooling - for example: protractor[^1], jasmine[^2] and mocha for projects containing Javascript/AngularJS.
+As with most things, projects at Talis use test frameworks that are appropriate for their tooling - for example: protractor[^1], jasmine[^2] and mocha[^3] for projects containing Javascript/AngularJS.
 
 More important is the process of inclusion of appropriate tests when creating a new project, and additionally when extending an existing one.
 
@@ -21,6 +21,6 @@ Part of the code review process is to ensure that a [pull request](code-reviews.
 * ensure you write repeatable tests - make sure that if your tests rely on specific data, that your test process loads this data and ensures that the state is known before executing the tests
 * test against an analog of live configuration where possible
 
-[^1]: [Protractor JS](https://angular.github.io/protractor/#/)
+[^1]: [Protractor JS](https://angular.github.io/protractor)
 [^2]: [Jasmine](http://jasmine.github.io/1.3/introduction.html)
-[^3]: [Mocha](http://mochajs.org/)
+[^3]: [Mocha](http://mochajs.org)
