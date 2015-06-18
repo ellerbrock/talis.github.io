@@ -25,6 +25,14 @@ bundle exec jekyll serve
 
 Now go to http://127.0.0.1:4000
 
+If your running on a VM, start jekyll with the command
+
+```
+bundle exec jekyll serve --host 0.0.0.0
+```
+
+so that it binds to an address your host machine can access.
+
 ## Deploy
 
 To deploy to http://talis.github.io, merge to `master`. Changes will be applied after a short wait.
