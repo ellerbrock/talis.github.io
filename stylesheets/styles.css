@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,300,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,300,700);
 
 td.icon {
 	width: 20%;
@@ -9,7 +9,7 @@ td.build-number {
 
 body {
   padding:50px;
-  font:14px/1.5 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font:14px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#5E5E5E;
   font-weight:300;
   line-height: 180%;
@@ -60,7 +60,7 @@ a small {
 }
 
 .wrapper {
-  width:960px;
+  max-width:960px;
   margin:0 auto;
 }
 
@@ -79,7 +79,7 @@ code, pre {
 
 pre {
   padding:8px 15px;
-  background: #f8f8f8;  
+  background: #f8f8f8;
   border-radius:5px;
   border:1px solid #e5e5e5;
   overflow-x: auto;
@@ -163,33 +163,43 @@ hr {
   margin:0 0 20px;
 }
 
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
 @media print, screen and (max-width: 960px) {
-  
+
   div.wrapper {
     width:auto;
     margin:0;
   }
-  
+
   header, section, footer {
     float:none;
     position:static;
     width:auto;
   }
-  
+
   header {
     padding-right:320px;
   }
-  
+
   section {
     border-width:1px 0;
     padding:20px 0;
     margin:0 0 20px;
   }
-  
+
   header a small {
     display:inline;
   }
-  
+
   header ul {
     position:absolute;
     right:50px;
@@ -201,15 +211,15 @@ hr {
   body {
     word-wrap:break-word;
   }
-  
+
   header {
     padding:0;
   }
-  
+
   header ul, header p.view {
     position:static;
   }
-  
+
   pre, code {
     word-wrap:normal;
   }
@@ -219,7 +229,7 @@ hr {
   body {
     padding:15px;
   }
-  
+
   header ul {
     display:none;
   }
