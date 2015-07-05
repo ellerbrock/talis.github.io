@@ -16,7 +16,7 @@
     {% include header.html %}
     <div class="container">
       {% include nav.html %}
-      <section class="content">
+      <section class="content" role="main">
           {% if page.title != nil %}<h2>{{ page.title }}</h2>{% endif %}
           {{ content }}
       </section>

@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,300,700);
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   color:#5E5E5E;
   font:14px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -32,6 +36,30 @@ body {
 .site-title {
   margin-bottom: 3em;
 }
+
+.navigation {
+
+  /* box-shadow: 0 0.25em 0.25em rgba(0,0,0,0.25); */
+
+}
+
+@media (max-width: 719px) {
+  .navigation {
+    background-color: #fff;
+    position: absolute;
+    top: 12em;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .navigation:not(:target) {
+    box-shadow: none;
+    z-index: 1;
+    height: 0;
+  }
+}
+
+
 
 h1, h2, h3, h4, h5, h6 {
   color: #5E5E5E;
@@ -197,6 +225,10 @@ abbr {
 
   header {
     padding:0;
+  }
+
+  #menu-btn {
+    display: none;
   }
 
   nav {
