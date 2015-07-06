@@ -186,6 +186,10 @@ nav ul li.active a {
     color: #5E5E5E;
     font-weight: 600;
 }
+nav ul > ul {
+  margin-left: 1em;
+  margin-bottom: 0;
+}
 
 footer nav ul li, footer nav ul, footer nav h4 {
     display: inline;

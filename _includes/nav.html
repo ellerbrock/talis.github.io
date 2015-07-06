@@ -7,28 +7,13 @@
             <a href="{{ site.url }}/topics/charter.html">Our charter</a>
         </li>
     </ul>
-    <h3>Code</h3>
-    <ul>
-        <li{% if page.body_class == 'code-style' %} class="active"{% endif %}>
-            <a href="{{ site.url }}/topics/code-style.html">Style</a>
-        </li>
-        <li{% if page.body_class == 'code-reviews' %} class="active"{% endif %}>
-            <a href="{{ site.url }}/topics/code-reviews.html">Reviews</a>
-        </li>
-        <li{% if page.body_class == 'testing' %} class="active"{% endif %}>
-            <a href="{{ site.url }}/topics/testing.html">Testing</a>
-        </li>
-        <li{% if page.body_class == 'code-standards' %} class="active"{% endif %}>
-            <a href="{{ site.url }}/topics/code-standards.html">Standards</a>
-        </li>
-    </ul>
     <h3>Starting a new project</h3>
     <ul>
         <li{% if page.body_class == 'names' %} class="active"{% endif %}>
             <a href="{{ site.url }}/topics/names.html">Naming conventions</a>
         </li>
         <li{% if page.body_class == 'source-control' %} class="active"{% endif %}>
-            <a href="{{ site.url }}/topics/source-control.html">Source Control</a>
+            <a href="{{ site.url }}/topics/source-control.html">Source control</a>
         </li>
         <li{% if page.body_class == 'builds' %} class="active"{% endif %}>
             <a href="{{ site.url }}/topics/builds.html">Builds</a>
@@ -45,6 +30,45 @@
         <li{% if page.body_class == 'prod-check' %} class="active"{% endif %}>
             <a href="{{ site.url }}/topics/prod-check.html">Production checklist</a>
         </li>
+    </ul>
+    <h3>Code</h3>
+    <ul>
+        <li{% if page.body_class == 'code-style' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/code-style.html">Style</a>
+        </li>
+        <li{% if page.body_class == 'code-reviews' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/code-reviews.html">Reviews</a>
+        </li>
+        <li{% if page.body_class == 'testing' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/testing.html">Testing</a>
+        </li>
+        <li{% if page.body_class == 'code-standards' %} class="active"{% endif %}>
+            <a href="{{ site.url }}/topics/code-standards.html">Standards</a>
+        </li>
+    </ul>
+    <h3>Front-end development</h3>
+    <ul>
+      <li{% if page.body_class == 'style-guide' %} class="active"{% endif %}>
+        <a href="{{ site.url }}/topics/style-guide.html">Style guide</a>
+      </li>
+      {% if page.title == 'UI Style Guide' %}
+      <ul>
+        <li><a href="#colour-palette">Colour Palette</a></li>
+        <li><a href="#typography">Typography</a></li>
+        <li><a href="#buttons">Buttons</a></li>
+        <li><a href="#forms">Forms</a></li>
+        <li><a href="#tables">Tables</a></li>
+      </ul>
+      {% endif %}
+      <li{% if page.body_class == 'interface-patterns' %} class="active"{% endif %}>
+        <a href="{{ site.url }}/topics/interface-patterns.html">Interface patterns</a>
+      </li>
+      <li{% if page.body_class == 'accessibility' %} class="active"{% endif %}>
+        <a href="{{ site.url }}/topics/accessibility.html">Accessibility</a>
+      </li>
+      <li{% if page.body_class == 'performance' %} class="active"{% endif %}>
+        <a href="{{ site.url }}/topics/performance.html">Performance</a>
+      </li>
     </ul>
     <h3>Architecture</h3>
     <ul>
