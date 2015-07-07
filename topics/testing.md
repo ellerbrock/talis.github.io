@@ -10,7 +10,7 @@ For any code to be considered ready for production there need to be tests. For a
 
 * All test suites should produce xUnit xml reports.
 * All test reports should be integrated into continuous integration tools (Bamboo, Travis, etc), so that the CI tool can parse those results and provide detailed reports to the team; as well as fail the build should any tests fail.
-* 
+* All reports for browser test suites should include screenshots.
 
 ### End to End Browser Testing
 
