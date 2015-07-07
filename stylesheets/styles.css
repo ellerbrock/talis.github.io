@@ -14,6 +14,11 @@ body {
   padding: 1em;
 }
 
+header {
+  position: relative;
+  z-index: 500;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -33,21 +38,25 @@ body {
   background-position: 0% 45%;
 }
 
-.site-title {
-  margin-bottom: 3em;
+.site-title,
+.btn {
+  display: inline-block;
 }
 
-.navigation {
+.btn {
+  font-size: 1.8em;
+}
 
-  /* box-shadow: 0 0.25em 0.25em rgba(0,0,0,0.25); */
-
+#close-btn {
+  display: none;
 }
 
 @media (max-width: 719px) {
   .navigation {
     background-color: #fff;
     position: absolute;
-    top: 12em;
+    top: 0;
+    padding-top: 13em;
     width: 100%;
     overflow: hidden;
   }
@@ -56,6 +65,20 @@ body {
     box-shadow: none;
     z-index: 1;
     height: 0;
+  }
+
+  #nav:target #close-btn {
+    display: block;
+  }
+
+  #close-btn {
+    position: absolute;
+    font-size: 1.8em;
+    top: 5.6em;
+    background-color: #fff;
+    width: 1em;
+    height: 1em;
+    z-index: 600;
   }
 }
 
@@ -227,7 +250,11 @@ abbr {
     padding:0;
   }
 
-  #menu-btn {
+  .btn {
+    display: none;
+  }
+
+  #top-bar > #menu-btn {
     display: none;
   }
 
