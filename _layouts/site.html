@@ -12,16 +12,18 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
-<body class="wrapper clearfix {% if page.body_class %}{{ page.body_class }}{% endif %}">
+<body class="{% if page.body_class %}{{ page.body_class }}{% endif %}">
     {% include header.html %}
-    <section>
-        {% if page.title != nil %}<h2>{{ page.title }}</h2>{% endif %}
-        {{ content }}
-    </section>
+    <div class="container" id="main">
+      {% include nav.html %}
+      <section class="content" role="main">
+          {% if page.title != nil %}<h2>{{ page.title }}</h2>{% endif %}
+          {{ content }}
+      </section>
+    </div>
     <footer>
         {% include footer.html %}
     </footer>
-</div>
 <script src="/javascripts/scale.fix.js"></script>
 </body>
 </html>
