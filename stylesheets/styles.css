@@ -56,8 +56,10 @@ header {
     background-color: #fff;
     position: absolute;
     top: 0;
-    padding-top: 13em;
+    padding: 13em 1em 0;
     width: 100%;
+    left: 0;
+    right: 0;
     overflow: hidden;
   }
 
