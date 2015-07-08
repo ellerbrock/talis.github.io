@@ -17,7 +17,7 @@ For any code to be considered ready for production there need to be tests. For a
 End to End Browser tests are by definition time consuming. In order to ensure that we can keep build durations down we need to consider a number of things when writing them:
 
 * Ensure that tests are atomic, in other words the test you are authoring should not be dependent on any other test in the suite, or rely on fixture data that another test is likely to change.
-  * it might be helpful to ask yourself _can my test be run multiple times without the need to reset data_
+  * It might be helpful to ask yourself _can my test be run multiple times without the need to reset data_
 * Ensure that all of our tests can be run in parallel. This is important because it is one of the most effective ways we can help ensure that build durations are kept to a minimum.
 * Flaky Tests are Poison[^2]. If a test intermittently fails it creates frustration, reduces confidence and slows our ability to release. These tests should be quarantined and fixed/re-written.
 * Where possible you should be avoiding the use of sleep() commands unless absolutely necessary. Instead you should be waiting for specific elements to be present/visible e.g. `$this->waitForElementID("itemAppearsOn");`.
