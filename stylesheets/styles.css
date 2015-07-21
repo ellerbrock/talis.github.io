@@ -20,12 +20,14 @@ header {
 }
 
 .container {
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
 }
 
 .content {
-	flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
   max-width: 38rem;
   padding-top:3em;
   padding-bottom:3em;
@@ -230,12 +232,12 @@ abbr {
 
 .clearfix:before,
 .clearfix:after {
-	content: " ";
-	display: table;
+  content: " ";
+  display: table;
 }
 
 .clearfix:after {
-	clear: both;
+  clear: both;
 }
 
 @media print, screen and (min-width: 480px) {
@@ -261,11 +263,13 @@ abbr {
   }
 
   nav {
-  	flex: 0 0 35%;
-  	order: -1;
+    -webkit-flex: 0 0 35%;
+    flex: 0 0 35%;
+    order: -1;
   }
 
   .container {
+    -webkit-flex-direction: row;
     flex-direction: row;
   }
 
