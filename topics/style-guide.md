@@ -11,7 +11,8 @@ Bootstrap 2[^2], Bootstrap 3[^3], and Zurb's Foundation[^4] framework are in use
 ### Colour Palette
 Our colour palette has been designed to balance accessibility requirements while remaining true to established brand guidelines.
 
-<a class="jsbin-embed" href="http://jsbin.com/qiwuje/embed?output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.34.0"></script>
+<p data-height="833" data-theme-id="0" data-slug-hash="mJaPYy" data-default-tab="result" data-user="danielmatthew" class='codepen'>See the Pen <a href='http://codepen.io/danielmatthew/pen/mJaPYy/'>Talis: Colour Palette</a> by Daniel Matthew (<a href='http://codepen.io/danielmatthew'>@danielmatthew</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 {% highlight scss %}
 // Greys
@@ -45,7 +46,8 @@ body {
 #### Headings
 We use a "double-stranded heading hierarchy" to define our headings. That is to say: there is an associated class for each heading style. If you wish an element to look like a `h1`, but it doesn't deserve the meaning associated with it, a class of `.alpha` can be applied. The current naming-convention uses the first six letters of the Greek alphabet[^6].
 
-<a class="jsbin-embed" href="http://jsbin.com/yariwa/embed?output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.34.0"></script>
+<p data-height="268" data-theme-id="0" data-slug-hash="dowMBB" data-default-tab="result" data-user="danielmatthew" class='codepen'>See the Pen <a href='http://codepen.io/danielmatthew/pen/dowMBB/'>Header Styles</a> by Daniel Matthew (<a href='http://codepen.io/danielmatthew'>@danielmatthew</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 {% highlight scss %}
 h1, .alpha {
@@ -135,7 +137,8 @@ Use the appropriate button style for the type of interaction: use `.btn-danger` 
 
 Use JavaScript to apply and remove the `disabled` attribute to indicate that a button is ineligible for interaction.
 
-<a class="jsbin-embed" href="http://jsbin.com/vixeme/embed?output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.34.1"></script>
+<p data-height="268" data-theme-id="0" data-slug-hash="eNbZqr" data-default-tab="result" data-user="danielmatthew" class='codepen'>See the Pen <a href='http://codepen.io/danielmatthew/pen/eNbZqr/'>Talis - Buttons</a> by Daniel Matthew (<a href='http://codepen.io/danielmatthew'>@danielmatthew</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 {% highlight html %}
 <a class="btn">Button</a>
@@ -146,7 +149,8 @@ Use JavaScript to apply and remove the `disabled` attribute to indicate that a b
 
 ### Forms
 
-<a class="jsbin-embed" href="http://jsbin.com/coyugo/embed?output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.34.1"></script>
+<p data-height="268" data-theme-id="0" data-slug-hash="MwZpdK" data-default-tab="result" data-user="danielmatthew" class='codepen'>See the Pen <a href='http://codepen.io/danielmatthew/pen/MwZpdK/'>Talis - Forms</a> by Daniel Matthew (<a href='http://codepen.io/danielmatthew'>@danielmatthew</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 {% highlight html %}
 <div class="control-group">
@@ -174,7 +178,8 @@ When a field is required, ensure that the parent `.control-group` is given the t
 
 While Bootstrap offers several modifiers to their table styles, other than `.table`, we only want to apply `.table-striped` to add zebra-striping. If an action button is implemented in the last column, the heading has a class of <code>.pull-right</code> applied. We set `overflow-x: scroll` in order to allow users on smaller screens the ability to view all content without having the table stretch the containing element.
 
-<a class="jsbin-embed" href="http://jsbin.com/juranov/embed?output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.34.1"></script>
+<p data-height="268" data-theme-id="0" data-slug-hash="dowvEm" data-default-tab="result" data-user="danielmatthew" class='codepen'>See the Pen <a href='http://codepen.io/danielmatthew/pen/dowvEm/'>Talis - Forms</a> by Daniel Matthew (<a href='http://codepen.io/danielmatthew'>@danielmatthew</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 {% highlight html %}
 <table class="table table-striped">

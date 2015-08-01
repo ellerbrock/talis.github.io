@@ -8,7 +8,8 @@ category: Front-end development
 ### Navigation
 For navigation purposes we use the following patterns:
 
-<a class="jsbin-embed" href="http://jsbin.com/cafiya/embed?output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.34.1"></script>
+<p data-height="268" data-theme-id="0" data-slug-hash="vOvxoa" data-default-tab="result" data-user="danielmatthew" class='codepen'>See the Pen <a href='http://codepen.io/danielmatthew/pen/vOvxoa/'>Talis - Navigation</a> by Daniel Matthew (<a href='http://codepen.io/danielmatthew'>@danielmatthew</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 #### Tabs
 Use the tabs pattern to display discrete options:
@@ -41,7 +42,8 @@ For all instances, don't forget to apply the `.active` and `.disabled` modifiers
 
 When there are multiple choices to display for a single interaction, use a dropdown. The button and dropdown menu are grouped within a `.btn-group` container.
 
-<a class="jsbin-embed" href="http://jsbin.com/siriwo/embed?output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.34.1"></script>
+<p data-height="268" data-theme-id="0" data-slug-hash="gpZmVZ" data-default-tab="result" data-user="danielmatthew" class='codepen'>See the Pen <a href='http://codepen.io/danielmatthew/pen/gpZmVZ/'>Talis - Dropdowns</a> by Daniel Matthew (<a href='http://codepen.io/danielmatthew'>@danielmatthew</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 {% highlight html %}
 <div class="btn-group">
@@ -81,14 +83,16 @@ The action button is a variant on the above dropdown, and is used where there ar
 
 When we offer two primary actions to the user, we can display both buttons side-by-side. Should there be more than two actions, display the primary action button and an action button.
 
-<a class="jsbin-embed" href="http://jsbin.com/hecayo/embed?output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.34.1"></script>
+<p data-height="268" data-theme-id="0" data-slug-hash="KpbmPp" data-default-tab="result" data-user="danielmatthew" class='codepen'>See the Pen <a href='http://codepen.io/danielmatthew/pen/KpbmPp/'>Talis - Page Headers</a> by Daniel Matthew (<a href='http://codepen.io/danielmatthew'>@danielmatthew</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 ### Alerts
 Use an alert component when there is additional information to show the user based on a change in state. For example, use the alert pattern to inform the user if there are no results from a search query. Or to declare that an record has been saved or deleted.
 
 Alert body text should be wrapped in paragraph tags.
 
-<a class="jsbin-embed" href="http://jsbin.com/cujaqu/embed?output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.34.1"></script>
+<p data-height="268" data-theme-id="0" data-slug-hash="LVMyYQ" data-default-tab="result" data-user="danielmatthew" class='codepen'>See the Pen <a href='http://codepen.io/danielmatthew/pen/LVMyYQ/'>Talis - Alerts</a> by Daniel Matthew (<a href='http://codepen.io/danielmatthew'>@danielmatthew</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 {% highlight html %}
 <!-- Basic -->
@@ -115,7 +119,8 @@ Alert body text should be wrapped in paragraph tags.
 ### Labels
 Use a label to bring attention to the state of an object. Within TADC they are used to add a visual highlight to the status of queues and requests.
 
-<a class="jsbin-embed" href="http://jsbin.com/hukixo/embed?output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.34.1"></script>
+<p data-height="268" data-theme-id="0" data-slug-hash="RPEVwe" data-default-tab="result" data-user="danielmatthew" class='codepen'>See the Pen <a href='http://codepen.io/danielmatthew/pen/RPEVwe/'>Talis - Labels</a> by Daniel Matthew (<a href='http://codepen.io/danielmatthew'>@danielmatthew</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 To implement a label, apply `.label` to an inline element. Labels have a number of modifiers to enable users to grok the status at a glance:
 
@@ -133,7 +138,8 @@ Use the pagination control when the number of results displayed exceeds that whi
 
 Apply the additional `.pagination-centered` class applied in order to have the element render in the middle of its parent element.
 
-<a class="jsbin-embed" href="http://jsbin.com/ceharu/embed?output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.34.1"></script>
+<p data-height="268" data-theme-id="0" data-slug-hash="eNbWmB" data-default-tab="result" data-user="danielmatthew" class='codepen'>See the Pen <a href='http://codepen.io/danielmatthew/pen/eNbWmB/'>Talis - Pagination</a> by Daniel Matthew (<a href='http://codepen.io/danielmatthew'>@danielmatthew</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 {% highlight html %}
 <div class="pagination">
@@ -151,7 +157,8 @@ Apply the additional `.pagination-centered` class applied in order to have the e
 ### Pager
 Apply `.pager` to a list containing next and previous controls in order to allow the user to move backwards and forwards through content. The character entities are currently hard-coded within the markup, though this should be moved into the stylesheet and generated with CSS.
 
-<a class="jsbin-embed" href="http://jsbin.com/mecaxa/embed?output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.34.0"></script>
+<p data-height="268" data-theme-id="0" data-slug-hash="JdwNoO" data-default-tab="result" data-user="danielmatthew" class='codepen'>See the Pen <a href='http://codepen.io/danielmatthew/pen/JdwNoO/'>Talis - Pager</a> by Daniel Matthew (<a href='http://codepen.io/danielmatthew'>@danielmatthew</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 {% highlight html %}
 <ul class="pager">
