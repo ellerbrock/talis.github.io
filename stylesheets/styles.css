@@ -244,6 +244,10 @@ abbr {
   clear: both;
 }
 
+.github-fork-ribbon {
+  background-color: #c5197d;
+}
+
 @media print, screen and (min-width: 480px) {
 
 }
