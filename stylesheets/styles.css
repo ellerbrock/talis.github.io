@@ -246,6 +246,17 @@ abbr {
 
 .github-fork-ribbon {
   background-color: #c5197d;
+  background-image: none;
+  -webkit-box-shadown: none;
+
+  box-shadow: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.github-fork-ribbon a,
+.github-fork-ribbon a:hover {
+  border: none;
+  text-shadow: none;
 }
 
 @media print, screen and (min-width: 480px) {
