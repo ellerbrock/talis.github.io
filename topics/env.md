@@ -4,8 +4,6 @@ title: Environments
 body_class: env
 ---
 
-### Environments
-
 Currently the conventions are:
 
 * `development` - your local machine, avoid, see `local`
