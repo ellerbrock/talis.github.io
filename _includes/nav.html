@@ -7,6 +7,16 @@
             <a href="{{ site.url }}/topics/charter.html">Our charter</a>
         </li>
     </ul>
+    <h3>Architecture</h3>
+    <ul>
+        {% for p in site.pages %}
+        {% if p.category == "Architecture" %}
+        <li{% if page.body_class == p.body_class %} class="active"{% endif %}>
+        <a href="{{ site.url }}/topics/{{p.body_class}}.html">{{p.title}}</a>
+        </li>
+        {% endif%}
+        {% endfor %}
+    </ul>
     <h3>Starting a new project</h3>
     <ul>
         <li{% if page.body_class == 'names' %} class="active"{% endif %}>
@@ -69,16 +79,6 @@
       <li{% if page.body_class == 'performance' %} class="active"{% endif %}>
         <a href="{{ site.url }}/topics/performance.html">Performance</a>
       </li>
-    </ul>
-    <h3>Architecture</h3>
-    <ul>
-        {% for p in site.pages %}
-         {% if p.category == "Architecture" %}
-        <li{% if page.body_class == p.body_class %} class="active"{% endif %}>
-            <a href="{{ site.url }}/topics/{{p.body_class}}.html">{{p.title}}</a>
-        </li>
-         {% endif%}
-        {% endfor %}
     </ul>
     <h3>Operations</h3>
     <ul>
