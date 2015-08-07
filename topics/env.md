@@ -4,10 +4,15 @@ title: Environments
 body_class: env
 ---
 
+<<<<<<< HEAD
 ### Environments
 
 Currently the conventions are:
 
+=======
+Currently the conventions are:
+
+>>>>>>> 365367e4fc318e99186468941453c8f1456bc567
 * `development` - your local machine, avoid, see `local`
 * `local` - the puppet-provisioned vagrant environment, a VM on your development host.
 * `build` - the build environment, where code is built and tested

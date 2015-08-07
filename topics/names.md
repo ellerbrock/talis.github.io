@@ -17,7 +17,11 @@ We use a postfix to indicate what type of component the repo contains:
 [^1]: [gotmilk-hack](https://github.com/talis/gotmilk-hack)
 
 
+<<<<<<< HEAD
 ### Primities
+=======
+### Primitives
+>>>>>>> 365367e4fc318e99186468941453c8f1456bc567
 
 Short snappy common nouns and verbs that broadly indicate the functional area of the primitive are good (e.g. Echo, 
 Envoy, Depot, Persona) proper nouns and names, literal or more abstract concepts that require a conversation to explain 
