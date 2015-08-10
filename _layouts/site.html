@@ -9,7 +9,7 @@
     <!--[if lt IE 9]>
     <link rel="stylesheet" href="/stylesheets/github-fork-ribbon-css/gh-fork-ribbon.ie.css">
     <![endif]-->
-    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/tufte.css">
     <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
@@ -17,19 +17,13 @@
     <![endif]-->
 </head>
 <body class="{% if page.body_class %}{{ page.body_class }}{% endif %}">
-    <div class="github-fork-ribbon-wrapper right">
-        <div class="github-fork-ribbon">
-            <a href="http://careers.talis.com?utm_source=handbook">We are always hiring</a>
-        </div>
-    </div>
-
     {% include header.html %}
     <div class="container" id="main">
-      {% include nav.html %}
-      <section class="content" role="main">
+
+      <article class="content" role="main">
           {% if page.title != nil %}<h2>{{ page.title }}</h2>{% endif %}
           {{ content }}
-      </section>
+      </article>
     </div>
     <footer>
         {% include footer.html %}
