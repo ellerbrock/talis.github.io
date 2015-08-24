@@ -27,5 +27,5 @@ and example response and request formats.
 
 
 
-[^1] [Apiary homepage](https://apiary.io/)
-[^2] [echo public API documentation](http://docs.talisecho.apiary.io/)
+[^1]: [Apiary homepage](https://apiary.io/)
+[^2]: [echo public API documentation](http://docs.talisecho.apiary.io/)
