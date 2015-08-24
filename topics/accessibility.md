@@ -102,10 +102,10 @@ Resources exist to guide the developer through a straightforward accessibility a
 
 For projects that take advantage of a task runner, it is worth adding the appropriate plugin[^6] and having it run pre-commit[^7].
 
-[^1] [WAI-finding with ARIA Landmark Roles](http://alistapart.com/column/wai-finding-with-aria-landmark-roles)
-[^2] [HTML5 Accessibility](http://www.html5accessibility.com/)
-[^3] [Web Accessibility Checklist](http://a11yproject.com/checklist.html)
-[^4] [Accessibility Developer Tools for Chrome](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en-US)
-[^5] [Link to go here]()
-[^6] [grunt-accessibility plugin](https://github.com/yargalot/grunt-accessibility)
-[^7] [Grunt & pre-commit hooks](https://juhq.wordpress.com/2013/01/28/git-hooks-pre-commit-grunt/)
+[^1]: [WAI-finding with ARIA Landmark Roles](http://alistapart.com/column/wai-finding-with-aria-landmark-roles)
+[^2]: [HTML5 Accessibility](http://www.html5accessibility.com/)
+[^3]: [Web Accessibility Checklist](http://a11yproject.com/checklist.html)
+[^4]: [Accessibility Developer Tools for Chrome](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en-US)
+[^5]: [Suitable Firefox equivalent]()
+[^6]: [grunt-accessibility plugin](https://github.com/yargalot/grunt-accessibility)
+[^7]: [Grunt & pre-commit hooks](https://juhq.wordpress.com/2013/01/28/git-hooks-pre-commit-grunt/)
