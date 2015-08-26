@@ -51,7 +51,7 @@ You now need to write the commit log message for the single commit being created
 
 ![Old Commit Messages](/images/topics/squash/squash_example_004.png){: .center-image }
 
-You can edit this to create a new commit meesage. Anything that is commented out will not be in the final commit message. Save and exit the file.
+You can edit this to create a new commit message. Anything that is commented out will not be in the final commit message. Save and exit the file.
 
 The git log now has only one commit:
 
