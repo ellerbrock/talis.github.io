@@ -35,7 +35,10 @@ $red: #a02f2b;
 {% endhighlight %}
 
 ### Typography
-Our core typeface is Open Sans, available from Google Fonts[^5]. Body text is set at 13px using a line-height of 20px, and is by default coloured Death Star Grey (`#5e5e5e`). We can declare our family, size, and line-height in one shorthand declaration:
+Our core typeface is Open Sans, available from Google Fonts[^5].
+
+#### Body Text
+Body text is set at 13px using a line-height of 20px, and is by default coloured Death Star Grey (`#5e5e5e`). We can declare our family, size, and line-height in one shorthand declaration:
 
 {% highlight scss %}
 body {
@@ -102,6 +105,12 @@ input, select, textarea {
   font-family: inherit;
 }
 {% endhighlight %}
+
+#### Wells
+An exception to previous rules occurs when text is displayed within a well. Body text and `h2`, `h4`, and `h6` must be coloured `#5e5e5e` to ensure that their contrast ratio remains adequate. The background of form inputs changes to `#ffffff`.
+
+<p data-height="400" data-theme-id="0" data-slug-hash="oXKKgp" data-default-tab="result" data-user="danielmatthew" class='codepen'>See the Pen <a href='http://codepen.io/danielmatthew/pen/oXKKgp/'>Text within wells</a> by Daniel Matthew (<a href='http://codepen.io/danielmatthew'>@danielmatthew</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 #### Open Sans
 Google Fonts offers the developer three mechanisms to include a typeface: with a `link` element, a CSS `@import` rule, or with JavaScript.
