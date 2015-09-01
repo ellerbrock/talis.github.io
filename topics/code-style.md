@@ -3,26 +3,84 @@ layout: site
 title: Code Style
 body_class: code-style
 ---
-### Universal
-- Use soft tabs with two spaces
 
 ### HTML
-- Use HTML5 doctype
-- One element per line
-- Self close tags
+
+What we're aiming for:
 
 {% highlight html %}
-<!doctype>
-<div class="foo" id="bar" data-baz="foobar"></div>
+<!doctype html>
+<html lang="en-gb">
+<!-- Head -->
+  <h1 class="alpha" id="myTitle">Title</h1>
+  <div class="foo" id="bar" data-baz="foobar" role="banner" aria-labelledby="myTitle">
+    <p>Lorem ipsum dolor mit...</p>
+  </div>
+<!-- Stuff -->
+{% endhighlight %}
+
+#### Syntax
+- Use soft tabs with two spaces. Soft tabs make it easy to for a developer to set their own display preferences.
+- One element per line - indent if nested
+- Ignore trailing slash in self-closing tags
+- Double quotes on attributes
+
+#### Doctype
+Using the HTML5 doctype helps ensure that documents are rendered in standards mode[^1] across all browsers.
+
+{% highlight html %}
+<!doctype html>
+{% endhighlight %}
+
+#### Language Attribute
+Ensure that the language attribute is set on your document: it's one of the low-hanging fruit for helping assisitive technologies.
+
+{% highlight html %}
+<html lang="en-gb">
+{% endhighlight %}
+
+> Authors are encouraged to specify a lang attribute on the root html element, giving the document's language. This aids speech synthesis tools to determine what pronunciations to use, translation tools to determine what rules to use, and so forth.
+
+#### Attribute Order
+As classes see the most activity and are the most useful attribute, they are authored first. The ID attribute should be reserved for anchors, JavaScript, and accessibility hooks.
+
+- `class`
+- `id`, `name`
+- `data-*`
+- `src`, `for`, `type`, `href`, `value`
+- `title`, `alt`
+- `role`, `aria-*`
+
+#### Boolean attributes
+Using HTML5 means that there is no need for a declared value on attributes such as `disabled`, `hidden`, and `checked`. The W3C and WhatWG[^2] both declare that:
+
+> The presence of a boolean attribute on an element represents the true value, and the absence of the attribute represents the false value.
+
+{% highlight html %}
+<input type="text" disabled>
 {% endhighlight %}
 
 ### CSS
+
+#### Syntax
+
+We use CSScomb[^3] and the appropriate configuration file[^4], to enforce a "house" style:
+
+- Use soft tabs with two spaces.
 - One selector per line
 - One declaration per line
 - Opening brace on same line
 - Closing brace on new line
+- Space after colon
 - End all declarations with a semi-colon
 - All hex values are lowercase
+- Fractions must implement a proceeding 0
+- Values of zero are unit-less
+- Space after comma-separated values
+
+#### Declaration Order
+
+Declarations are grouped as per the example below:
 
 {% highlight scss %}
 .foobar {
@@ -51,8 +109,35 @@ body_class: code-style
   border-bottom: 1px solid #ebebeb;
 
   // Misc
+  table-layout: fixed;
 }
 {% endhighlight %}
 
-[^1]: (http://codeguide.co)
-[^2]: (https://gist.github.com/bobbygrace/9e961e8982f42eb91b80)
+Those declarations that control the positioning of an element within the document are raised to the top of the ruleset: they have the most impact on how the browser's layout engine applies the box model.
+
+#### Media Queries
+Group media queries with the selector that they relate to, rather than placed at the end of the stylesheet or in a separate document altogether. While there's an argument that repeating the `@media (min-width: 480px) { ... }` declaration breaks the principle of <abbr title="Don't repeat yourself">DRY</abbr> and increases file-size, the benefits of seeing the media query in context outweight the negatives - particularly when gzip and minification tools are available.
+
+##### Breakpoint Definitions
+When using a pre-processor, breakpoint values should be declared in a single place alongside the rest of the stylesheet variables.
+
+##### Media Query Splitting
+Where applicable, take advantage of media-query splitting[^5] in an effort to avoid introducing styles, only to have to overwrite them later.
+
+{% highlight scss %}
+@media (max-width: 479px) {
+  // Small
+}
+@media (min-width: 480px) and (max-width: 719px) {
+  // Medium
+}
+@media (min-width: 720px) and (max-width: 1199px) {
+  // Large
+}
+{% endhighlight %}
+
+[^1]: [Quirks Mode - Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Quirks_Mode_and_Standards_Mode)
+[^2]: [Boolean attributes - WhatWG HTML spec](https://html.spec.whatwg.org/#boolean-attributes)
+[^3]: [CSScomb](http://csscomb.com/)
+[^4]: [.csscomb.json](https://gist.github.com/danielmatthew/66d9b937216f6bec3e36)
+[^5]: [Media Query Splitting](http://simurai.com/blog/2012/08/29/media-query-splitting/)

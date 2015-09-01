@@ -5,3 +5,4 @@ Gemfile.lock
 .idea
 npm-debug.log
 vendor
+node_modules
