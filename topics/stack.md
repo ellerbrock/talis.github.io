@@ -88,8 +88,7 @@ using ElasticSearch. We consider search to be ephemeral so make sure all indexes
 
 #### Relational: Postgres
 
-If you need a relational database use Postgres. However, we don't currently use relational databases anywhere in
-production.
+If you need a relational database use Postgres. We currently use Postgres as a backend for PuppetDB and is hosted by Amazon RDS.
 
 ## Cloud computing
 
