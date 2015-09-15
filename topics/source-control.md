@@ -94,7 +94,9 @@ The following keywords will also close a GitHub issue automatically when the bra
 It is therefore very important that we write good commit messages[^5], following these simple guidelines:
 
 {% highlight bash %}
-Summarize changes in around 50 characters or less
+Summarize changes in around 50 characters or less.
+
+We always include the Jira Story Number in the first line.
 
 More detailed explanatory text, if necessary. Wrap it to 72
 characters or so. In some contexts, the first line is treated as the
