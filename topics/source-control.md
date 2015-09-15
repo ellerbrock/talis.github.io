@@ -65,7 +65,9 @@ $ git push origin STORY-002-Modify-Squash-Example --force
 
 #### Commit Messages
 
-While working on a branch, commits provide a rollback positions and commit messages reflect this. When merging, the commit message becomes part of the master branches commit log. The content of the commit message at that point can help with things like release tracking and linking or even automatically closing GitHub issues.
+While working on a branch, commits provide a rollback positions and commit messages reflect this. When merging, the commit message becomes part of the master branches commit log. 
+
+The content of the commit message at that point can help with things like release tracking and linking or even automatically closing GitHub issues.
 
 For example, using the git command:
 
@@ -89,13 +91,42 @@ The following keywords will also close a GitHub issue automatically when the bra
 	<li>resolved</li>
 </ul>
 
-A good commit message will have a short (< 50 characters) summary on the first line, followed by a paragraph or two giving further detail. For example.
+It is therefore very important that we write good commit messages[^5], following these simple guidelines:
 
-{% highlight text%}
-STORY-002 Modifications to Squash Example
+{% highlight bash %}
+Summarize changes in around 50 characters or less
 
-This commit modifies the squash example. 
-It fixes #10 by doing some really cool stuff.
+More detailed explanatory text, if necessary. Wrap it to 72
+characters or so. In some contexts, the first line is treated as the
+subject of the commit and the rest of the text as the body. The
+blank line separating the summary from the body is critical (unless
+you omit the body entirely); various tools like `log`, `shortlog`
+and `rebase` can get confused if you run the two together.
+
+Explain the problem that this commit is solving. Focus on why you
+are making this change as opposed to how (the code explains that).
+Are there side effects or other unintuitive consequenses of this
+change? This is the place to explain them.
+
+Further paragraphs come after blank lines.
+
+ - Bullet points are okay, too
+
+ - Typically a hyphen or asterisk is used for the bullet, preceded
+   by a single space, with blank lines in between, but conventions
+   vary here
+
+If you use an issue tracker, put references to them at the bottom,
+like this:
+
+Resolves: #123
+See also: #456, #789
+{% endhighlight %}
+
+The tools we use can also be configured to help us adhere to this, for example, if you use `Vim` for editing your commit messages you can configure it to wrap text correctly by enabling the indent plugin in your `~/.vimrc` file:
+
+{% highlight bash %}
+filetype indent plugin on
 {% endhighlight %}
 
 
@@ -104,3 +135,4 @@ It fixes #10 by doing some really cool stuff.
 [^2]: [Collective Code Ownership](http://www.jamesshore.com/Agile-Book/collective_code_ownership.html)
 [^3]: [Github Flow](https://guides.github.com/introduction/flow/)
 [^4]: [Commit Often, Perfect Later, Publish Once](https://sethrobertson.github.io/GitBestPractices/)
+[^5]: [How to Write a Git Commit Message](http://chris.beams.io/posts/git-commit/)
