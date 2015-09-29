@@ -99,7 +99,7 @@ Summarize changes in around 50 characters or less.
 Include the issue tracker ticket number (followed by a colon) at the beginning of the summary line e.g. `ABC-1390:`. Use the imperative mood, explain what applying the commit will do, not what you did. i.e. "Fix bug XYZ".
 
 More detailed explanatory text, if necessary. Wrap it to 72
-characters (this is because git log adds a padding of 4 blank spaces) when it formats messages[^6]. 
+characters (this is because git log adds a padding of 4 blank spaces) when it formats messages. 
 
 In some contexts, the first line is treated as the
 subject of the commit and the rest of the text as the body. The
@@ -126,12 +126,13 @@ Resolves: #123
 See also: #456, #789
 {% endhighlight %}
 
+The wrapping of text at 50 characters for the Summary line and 72 characters for the body is very important, and is explained here[^6].
+
 The tools we use can also be configured to help us adhere to this, for example, if you use `Vim` for editing your commit messages you can configure it to wrap text correctly by enabling the indent plugin in your `~/.vimrc` file:
 
 {% highlight bash %}
 filetype indent plugin on
 {% endhighlight %}
-
 
 
 [^1]: [Engineering Culture Series: Code ownership](https://code.facebook.com/posts/263824650408138/engineering-culture-series-code-ownership/)
