@@ -65,7 +65,7 @@ $ git push origin STORY-002-Modify-Squash-Example --force
 
 #### Commit Messages
 
-While working on a branch, commits provide a rollback positions and commit messages reflect this. When merging, the commit message becomes part of the master branches commit log. 
+While working on a branch, commits provide rollback positions and commit messages reflect this. When merging, the commit message becomes part of the master branch's commit log. 
 
 The content of the commit message at that point can help with things like release tracking and linking or even automatically closing GitHub issues.
 
@@ -96,7 +96,7 @@ It is therefore very important that we write good commit messages[^5], following
 {% highlight bash %}
 Summarize changes in around 50 characters or less. 
 
-Include the Jira ticket number in the the first line.
+Include the Jira ticket number (followed by a colon) at the beginning of the summary line e.g. `TENT-1390:`. 
 
 More detailed explanatory text, if necessary. Wrap it to 72
 characters or so. In some contexts, the first line is treated as the
@@ -114,9 +114,8 @@ Further paragraphs come after blank lines.
 
  - Bullet points are okay, too
 
- - Typically a hyphen or asterisk is used for the bullet, preceded
-   by a single space, with blank lines in between, but conventions
-   vary here
+ - We should use an asterisk for the bullet, preceded
+   by a single space, with blank lines in between.
 
 If the story resolves github issues, put references to them at the bottom,
 like this:
