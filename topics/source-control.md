@@ -96,10 +96,12 @@ It is therefore very important that we write good commit messages[^5], following
 {% highlight bash %}
 Summarize changes in around 50 characters or less. 
 
-Include the Jira ticket number (followed by a colon) at the beginning of the summary line e.g. `TENT-1390:`. 
+Include the issue tracker ticket number (followed by a colon) at the beginning of the summary line e.g. `ABC-1390:`. Use the imperative mood, explain what applying the commit will do, not what you did. i.e. "Fix bug XYZ".
 
 More detailed explanatory text, if necessary. Wrap it to 72
-characters or so. In some contexts, the first line is treated as the
+characters (this is because git log adds a padding of 4 blank spaces) when it formats messages[^6]. 
+
+In some contexts, the first line is treated as the
 subject of the commit and the rest of the text as the body. The
 blank line separating the summary from the body is critical (unless
 you omit the body entirely); various tools like `log`, `shortlog`
@@ -112,9 +114,9 @@ change? This is the place to explain them.
 
 Further paragraphs come after blank lines.
 
- - Bullet points are okay, too
+ * Bullet points are okay, too
 
- - We should use an asterisk for the bullet, preceded
+ * We should use an asterisk for the bullet, preceded
    by a single space, with blank lines in between.
 
 If the story resolves github issues, put references to them at the bottom,
@@ -137,3 +139,4 @@ filetype indent plugin on
 [^3]: [Github Flow](https://guides.github.com/introduction/flow/)
 [^4]: [Commit Often, Perfect Later, Publish Once](https://sethrobertson.github.io/GitBestPractices/)
 [^5]: [How to Write a Git Commit Message](http://chris.beams.io/posts/git-commit/)
+[^6]: [Whats with the 50/72 Rule](https://medium.com/@preslavrachev/what-s-with-the-50-72-rule-8a906f61f09c)
