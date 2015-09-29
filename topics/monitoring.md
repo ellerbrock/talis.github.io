@@ -21,13 +21,14 @@ Apdex, transactional, and where applicable Browser monitoring should be in place
 
 ### Auto User monitoring
 
-Synthetic checks should be continually executed against the application, these checks should perform common user defined functions.
+Synthetic checks should be continually executed against the application at an interval of around five minutes.  The checks should execute user 
+defined functions and can be either at the API or Browser level.  In the event of a check failing, appropriate alerting should be triggered.
 
 ### Non Listening Services
 
 Example of monitoring for non listening services:
     * Check that process is running
-    * Actively check metrics produced by the service, such as, queue length and number of running processes
+    * Actively check metrics produced by the service, such as queue length and the number of running processes
     * Monitor the effect of the service not running such as data alteration
     * Check for log file output
     
