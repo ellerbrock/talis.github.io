@@ -13,12 +13,22 @@ Applications where possible should expose a status endpoint for internal monitor
 
 ### External Monitoring
 
-An external monitoring function should exist where applicable, and this should exercise a function of the application and not just a landing page.
+An external monitoring function should exist where applicable, and this should exercise a function of the application that is not just a landing page.
+
+### Real User Monitoring
+
+Apdex, transactional, and where applicable Browser monitoring should be in place to identify performance degradation.
+
+### Auto User monitoring
+
+Synthetic checks should be continually executed against the application at an interval of around five minutes.  The checks should execute user 
+defined functions and can be either at the API or Browser level.  In the event of a check failing, appropriate alerting should be triggered.
 
 ### Non Listening Services
 
-Services such as job workers and batch processes that are not externally accessible should still be monitored.
-
-They can be monitored to show if they are in a running state.
-
-The result of these services should be monitored, this could be based on queues, data alteration, or the reading of log files.
+Example of monitoring for non listening services:
+    * Check that process is running
+    * Actively check metrics produced by the service, such as queue length and the number of running processes
+    * Monitor the effect of the service not running such as data alteration
+    * Check for log file output
+    

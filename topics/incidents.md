@@ -26,4 +26,14 @@ During an incident it is imperative to keep communication channels open with reg
 3. Incident co-ordination (HipChat, Hangouts)
 4. Email updates to stakeholders
 
+### 24x7 Support Rota
+
+Talis applications and services operate 24x7x365.  Members of the engineering team form the 24x7 rota that is tasked with incident 
+management of Level 1 alerts.  At any one time the 24x7 rota contains both primary and secondary contacts ready to receive alerts.
+
+The main focus of the primary and secondary contacts is to manage the incident, either to resolution or on hand over to a Talis staff member.
+
+All documentation defining the Talis Infrastructure and applicable Runbooks are contained internally within the Infra repository.   
+
+
 [^1]: [PagerDuty](https://www.pagerduty.com)
