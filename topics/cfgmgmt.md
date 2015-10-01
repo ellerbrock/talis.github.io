@@ -10,7 +10,7 @@ is also used to define monitoring and alerting mechanisms.
 
 ### Application configuration
 
-Where applicable local configuration to an application or service should be abstracted from the deployed code and managed 
+Where applicable, local configuration for any application or service should be abstracted from the deployed code and managed 
 by the configuration management tool.
 
 ### Tooling
