@@ -78,10 +78,12 @@ The `alt` attribute on images is required in an effort to conform to accessibili
 Elements that represent tab controls should assume `role="tab"`, and be linked to the relevant content using the `aria-controls` attribute. The content itself implements the `tabpanel` role and `aria-labelledby`.
 
 {% highlight html %}
-<ul class="nav-tabs">
-  <li id="foo" role="tab" aria-controls="bar">Foo</li>
+<ul class="nav-tabs" role="tablist">
+  <li role="presentation">
+    <a id="label__tab-label" role="tab" aria-controls="tab__content-tab" aria-selected>Foo</a>
+  </li>
 </ul>
-<div id="bar" role="tabpanel" aria-labelledby="foo">Bar</div>
+<div id="tab__content-tab" role="tabpanel" aria-labelledby="label__tab-label">Bar</div>
 {% endhighlight %}
 
 #### Modal Windows
