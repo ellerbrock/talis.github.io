@@ -12,3 +12,5 @@ category: Front-end development
 ### Minifying
 
 ### Responsive images
+
+[Ludicrously Fast Page Loads](http://www.nateberkopec.com/2015/10/07/frontend-performance-chrome-timeline.html)
