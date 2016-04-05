@@ -21,7 +21,7 @@ The `role` attribute programmatically identifies sections of a page and help ass
 > If there is a suitable HTML element or attribute already implemented, but the accessibility support is not yet available, it is of course allowed and encouraged to use ARIA.
 
 #### Skip To Content
-Users taking advantage of assistive technologies will benefit from the addition of a 'Skip To Content' link at the root of the page. Positioned offscreen and only visible on `:focus`, it offers the ability to avoid repetitive and lengthy navigation menus.
+Users taking advantage of assistive technologies will benefit from the addition of a 'Skip to content' link at the root of the page. Positioned offscreen and only visible on `:focus`, it offers the ability to avoid repetitive and lengthy navigation menus. In the example below, a `tabindex` is added to the content container, though the effect can also be achieved via scripting.
 
 {% highlight html %}
 <a id="skip-to-content" href="#content">Skip to main content</a>
@@ -42,6 +42,28 @@ Users taking advantage of assistive technologies will benefit from the addition 
   position: absolute;
   top: 0;
   background: #4593ff;
+}
+
+#content:focus {
+  outline: none;
+}
+{% endhighlight %}
+
+#### Hide Content
+As documented at the A11y Project[^3] and used in Bootstrap itself, the `.sr-only` class is a useful utility to include within a project. 
+
+> There are also real world situations where you want to hide elements (e.g. a form label), but you still want text to be read by a screen reader. The “clip pattern” will hide the content visually, yet provide the content to screen readers. Unlike positioning and negative text-indent, it works with rtl languages for localization.
+
+{% highlight css %}
+.sr-only {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 {% endhighlight %}
 
@@ -100,14 +122,15 @@ $('.modal').on('shown', function() {
 
 #### Tooling
 
-Resources exist to guide the developer through a straightforward accessibility audit[^3]. By performing this as a pre-flight check before running any automated tests, you will catch the more obvious omissions. With that complete, developers can run the appropriate audit in Chrome[^4] or Firefox[^5].
+Resources exist to guide the developer through a straightforward accessibility audit[^4]. By performing this as a pre-flight check before running any automated tests, you will catch the more obvious omissions. With that complete, developers can run the appropriate audit in Chrome[^5] or Firefox[^6].
 
-For projects that take advantage of a task runner, it is worth adding the appropriate plugin[^6] and having it run pre-commit[^7].
+For projects that take advantage of a task runner, it is worth adding the appropriate plugin[^7] and having it run pre-commit[^8].
 
 [^1]: [WAI-finding with ARIA Landmark Roles](http://alistapart.com/column/wai-finding-with-aria-landmark-roles)
 [^2]: [HTML5 Accessibility](http://www.html5accessibility.com/)
-[^3]: [Web Accessibility Checklist](http://a11yproject.com/checklist.html)
+[^3]: [A11y Project](http://a11yproject.com/posts/how-to-hide-content/)
+[^4]: [Web Accessibility Checklist](http://a11yproject.com/checklist.html)
 [^4]: [Accessibility Developer Tools for Chrome](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en-US)
-[^5]: [Suitable Firefox equivalent]()
-[^6]: [grunt-accessibility plugin](https://github.com/yargalot/grunt-accessibility)
-[^7]: [Grunt & pre-commit hooks](https://juhq.wordpress.com/2013/01/28/git-hooks-pre-commit-grunt/)
+[^6]: [Suitable Firefox equivalent]()
+[^7]: [grunt-accessibility plugin](https://github.com/yargalot/grunt-accessibility)
+[^8]: [Grunt & pre-commit hooks](https://juhq.wordpress.com/2013/01/28/git-hooks-pre-commit-grunt/)
