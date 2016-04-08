@@ -124,22 +124,26 @@ h3 {
   font-weight: 400;
 }
 
-h1 {
+h1,
+.alpha {
   font-size: 1.8em;
   line-height: 0.952380952;
 }
 
-h2 {
+h2,
+.beta {
   font-size: 1.5em;
   line-height: 1.1428571429;
 }
 
-h3 {
+h3,
+.gamma {
   font-size: 1.3em;
   line-height: 1.3186813187;
 }
 
-h4 {
+h4,
+.delta {
   margin-bottom: 0.7em;
 
   font-size: 1.2em;
@@ -148,7 +152,8 @@ h4 {
   color: #000;
 }
 
-h5 {
+h5,
+.epsilon {
   margin-bottom: 1.1em;
 
   font-size: 0.9em;
@@ -156,7 +161,8 @@ h5 {
   line-height: 1.9047619048;
 }
 
-h6 {
+h6,
+.zeta {
   margin: 0;
 }
 
@@ -408,4 +414,14 @@ abbr {
     font-size: 12pt;
     color: #444;
   }
+}
+
+.sr-only {
+  position: absolute !important;
+  clip-path: polygon(0);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width:  1px !important;
+  overflow: hidden;
 }

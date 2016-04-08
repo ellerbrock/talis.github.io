@@ -7,7 +7,7 @@ body_class: source-control
 
 All source is stored within the [Talis GitHub](https://github.com/talis).
 
-Our culture around source code is one of Shared (or Collective) Code Ownership[^1], this means that we are all, as a team, collectively responsible for our code. We all own the code and in principle any one of us can make changes anywhere[^2]. 
+Our culture around source code is one of Shared (or Collective) Code Ownership[^1], this means that we are all, as a team, collectively responsible for our code. We all own the code and in principle any one of us can make changes anywhere[^2].
 
 ### Working with branches
 
@@ -39,23 +39,23 @@ $ git rebase -i master
 
 Running the rebase command opens an editor which lists all your commits:
 
-![Picking Commits During Rebase](/images/topics/squash/squash_example_002.png){: .center-image }
+![Screenshot of the author picking commits during rebase](/images/topics/squash/squash_example_002.png){: .center-image }
 
 In the editor, leave the first commit unchanged, but change the following commits from "pick" to "squash" or just "s" as shown below.
 
-![Selecting Commits to Squash](/images/topics/squash/squash_example_003.png){: .center-image }
+![Screenshot of the author selecting commits to squash](/images/topics/squash/squash_example_003.png){: .center-image }
 
 Save and exit the file.
 
-You now need to write the commit log message for the single commit being created by the squash. An editor is opened which displays the log messages for each of the squashed commits. 
+You now need to write the commit log message for the single commit being created by the squash. An editor is opened which displays the log messages for each of the squashed commits.
 
-![Old Commit Messages](/images/topics/squash/squash_example_004.png){: .center-image }
+![Screenshot of the author viewing multiple commit messages](/images/topics/squash/squash_example_004.png){: .center-image }
 
 You can edit this to create a new commit message. Anything that is commented out will not be in the final commit message. Save and exit the file.
 
 The git log now has only one commit:
 
-![One Commit](/images/topics/squash/squash_example_005.png){: .center-image }
+![Screenshot of a single, squashed commit.](/images/topics/squash/squash_example_005.png){: .center-image }
 
 Your now ready to push your branch back upto github. However, a normal push will be rejected because your local branch and the remote branch have diverged. Perform a force push with the --force option to push the squashed branch.
 
@@ -65,7 +65,7 @@ $ git push origin STORY-002-Modify-Squash-Example --force
 
 #### Commit Messages
 
-While working on a branch, commits provide rollback positions and commit messages reflect this. When merging, the commit message becomes part of the master branch's commit log. 
+While working on a branch, commits provide rollback positions and commit messages reflect this. When merging, the commit message becomes part of the master branch's commit log.
 
 The content of the commit message at that point can help with things like release tracking and linking or even automatically closing GitHub issues.
 
@@ -94,12 +94,12 @@ The following keywords will also close a GitHub issue automatically when the bra
 It is therefore very important that we write good commit messages[^5], following these simple guidelines:
 
 {% highlight bash %}
-Summarize changes in around 50 characters or less. 
+Summarize changes in around 50 characters or less.
 
 Include the issue tracker ticket number (followed by a colon) at the beginning of the summary line e.g. `ABC-1390:`. Use the imperative mood, explain what applying the commit will do, not what you did. i.e. "Fix bug XYZ".
 
 More detailed explanatory text, if necessary. Wrap it to 72
-characters (this is because git log adds a padding of 4 blank spaces) when it formats messages. 
+characters (this is because git log adds a padding of 4 blank spaces) when it formats messages.
 
 In some contexts, the first line is treated as the
 subject of the commit and the rest of the text as the body. The

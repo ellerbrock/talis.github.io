@@ -7,7 +7,7 @@
             <a href="{{ site.url }}/topics/charter.html">Our charter</a>
         </li>
     </ul>
-    <h3>Architecture</h3>
+    <h2 class="gamma">Architecture</h2>
     <ul>
         {% for p in site.pages %}
         {% if p.category == "Architecture" %}
@@ -17,7 +17,7 @@
         {% endif%}
         {% endfor %}
     </ul>
-    <h3>Starting a new project</h3>
+    <h2 class="gamma">Starting a new project</h2>
     <ul>
         <li{% if page.body_class == 'names' %} class="active"{% endif %}>
             <a href="{{ site.url }}/topics/names.html">Naming conventions</a>
@@ -41,7 +41,7 @@
             <a href="{{ site.url }}/topics/prod-check.html">Production checklist</a>
         </li>
     </ul>
-    <h3>Code</h3>
+    <h2 class="gamma">Code</h2>
     <ul>
         <li{% if page.body_class == 'code-style' %} class="active"{% endif %}>
             <a href="{{ site.url }}/topics/code-style.html">Style</a>
@@ -59,7 +59,7 @@
             <a href="{{ site.url }}/topics/managing-dependencies.html">Managing dependencies</a>
         </li>
     </ul>
-    <h3>Front-end development</h3>
+    <h2 class="gamma">Front-end development</h3>
     <ul>
       <li{% if page.body_class == 'style-guide' %} class="active"{% endif %}>
         <a href="{{ site.url }}/topics/style-guide.html">Style guide</a>
@@ -83,7 +83,7 @@
         <a href="{{ site.url }}/topics/performance.html">Performance</a>
       </li>
     </ul>
-    <h3>Operations</h3>
+    <h2 class="gamma">Operations</h2>
     <ul>
         <li{% if page.body_class == 'provisioning' %} class="active"{% endif %}>
             <a href="{{ site.url }}/topics/provisioning.html">Provisioning</a>
@@ -91,7 +91,7 @@
         <li{% if page.body_class == 'cfgmgmt' %} class="active"{% endif %}>
             <a href="{{ site.url }}/topics/cfgmgmt.html">Configuration Management</a>
         </li>
-        <li{% if page.body_class == 'cfgmgmtrevtest' %} class="active"{% endif %}>
+        <li{% if page.body_class == 'cfgmgmtrevtest_' %} class="active"{% endif %}>
             <a href="{{ site.url }}/topics/cfgmgmtrevtest.html">Reviewing and Testing</a>
         </li>
         <li{% if page.body_class == 'deployments' %} class="active"{% endif %}>
@@ -107,5 +107,5 @@
             <a href="{{ site.url }}/topics/incidents.html">Live incidents</a>
         </li>
     </ul>
-    <a id="close-btn" class="btn" href="#top">✖</a>
+    <a id="close-btn" class="btn" href="#top"><span aria-hidden>✖</span><span class="sr-only">Close menu</span></a>
 </nav>
