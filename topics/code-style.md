@@ -136,8 +136,47 @@ Where applicable, take advantage of media-query splitting[^5] in an effort to av
 }
 {% endhighlight %}
 
+### JavaScript
+
+### Linting
+A comprehensive list of JavaScript style guide lines[^6] can be found on Airbnb webpage.
+An ESLint[^7] configuration known as eslint-config-airbnb[^8] has been implemented based
+on the style guide lines to help developers when working within an IDE. These are the
+standards which our code should adhere to.
+
+The following configuration should be place either locally to the project or globally
+at `~/.eslintrc`. The `env` and `extends` value should be adjusted to cater for the
+project's needs.
+```json
+{
+    "env": {
+        "browser": true,
+        "node": true,
+        "mocha": true,
+        "mongo": true
+    },
+    "extends": "airbnb/legacy"
+}
+```
+### Pre-commit hooks
+A pre-hook should be appended to the project to fail the commit
+if the user is attempting to submit new or modified code which
+doesn't pass the linter. This will allow a pre-exisitng project
+to evolve over time & new projects to stay lint free from the start.
+
+Any potential broken windows that are related to a linting rule should
+be fixed, but a big bang approach in fixing all violations should be avoided
+to prevent large code churn.
+
+### New Projects
+When a new project is created it should comply with the approaches above
+from day one.
+
 [^1]: [Quirks Mode - Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Quirks_Mode_and_Standards_Mode)
 [^2]: [Boolean attributes - WhatWG HTML spec](https://html.spec.whatwg.org/#boolean-attributes)
 [^3]: [CSScomb](http://csscomb.com/)
 [^4]: [.csscomb.json](https://gist.github.com/danielmatthew/66d9b937216f6bec3e36)
 [^5]: [Media Query Splitting](http://simurai.com/blog/2012/08/29/media-query-splitting/)
+[^6]: [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+[^7]: [ESLint](http://eslint.org/)
+[^8]: [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
