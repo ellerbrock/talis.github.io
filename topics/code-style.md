@@ -138,7 +138,7 @@ Where applicable, take advantage of media-query splitting[^5] in an effort to av
 
 ### JavaScript
 
-### Linting
+#### Linting
 A comprehensive list of JavaScript style guide lines[^6] can be found on Airbnb webpage.
 An ESLint[^7] configuration known as eslint-config-airbnb[^8] has been implemented based
 on the style guide lines to help developers when working within an IDE. These are the
@@ -158,7 +158,7 @@ project's needs.
     "extends": "airbnb/legacy"
 }
 ```
-### Pre-commit hooks
+#### Pre-commit hooks
 A pre-hook should be appended to the project to fail the commit
 if the user is attempting to submit new or modified code which
 doesn't pass the linter. This will allow a pre-exisitng project
@@ -168,7 +168,7 @@ Any potential broken windows that are related to a linting rule should
 be fixed, but a big bang approach in fixing all violations should be avoided
 to prevent large code churn.
 
-### New Projects
+#### New Projects
 When a new project is created it should comply with the approaches above
 from day one.
 
