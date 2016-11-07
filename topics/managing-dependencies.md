@@ -18,7 +18,7 @@ project A@1.0.0
 
 In the root `package.json` file, the project can only specify the version dependency `B` but not `C`. If `C` were to break `B` in version 2 (because of the loose verson requirement of `B` denoted by the `^`) then the build cannot be fixed without asking the author of `B` to fix their package.
 
-In order to guarantee every build in any environment uses the exact same dependencies at a given point in time, NPM shrinkwrap[^2] is used to create a snapshot of a working dependency tree.
+In order to guarantee every build in any environment uses the exact same dependencies at a given point in time, NPM shrinkwrap[^2] is used to create a snapshot of a working dependency tree. Only application projects should be shrinkwrapped, not dependant libraries[^3].
 
 #### Setting up a new project
 
@@ -50,3 +50,4 @@ Commit the updated `npm-shrinkwrap` file.
 
 [^1]: [Node.js](https://nodejs.org/)
 [^2]: [NPM shrinkwrap](https://docs.npmjs.com/cli/shrinkwrap)
+[^3]: [Should I pin NPM dependencies?](https://gist.github.com/vvo/84a94cfc0f94c91ea6b6)
